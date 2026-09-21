@@ -1,0 +1,1472 @@
+/* Colours and sizes used across the whole app */
+:root {
+  --page-background: #f3f6fa;
+  --card-background: #ffffff;
+  --panel-background: #e8eef5;
+
+  --text-colour: #172029;
+  --soft-text: #4f5a66;
+  --faint-text: #7b8794;
+  --border-colour: #dce5ee;
+
+  --blue: #3e6e9e;
+  --bright-blue: #5289bc;
+  --pale-blue: #e7eff7;
+
+  --risk-low: #3d7a63;
+  --risk-medium: #8a6a1c;
+  --risk-high: #a2404c;
+  --risk-low-background: #e5f0eb;
+  --risk-medium-background: #f3eddc;
+  --risk-high-background: #f7e4e7;
+
+  --radius: 14px;
+  --radius-sm: 10px;
+}
+
+/* The font and background for every page */
+:root {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-colour);
+  background: var(--page-background);
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.7rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  line-height: 1.2;
+}
+
+p,
+li {
+  color: var(--soft-text);
+  line-height: 1.65;
+}
+
+/* The cards and panels used on every screen */
+.card,
+.input-panel {
+  border: 1px solid var(--border-colour);
+  border-radius: 22px;
+  background: var(--card-background);
+  box-shadow: 0 14px 40px rgba(28, 52, 43, 0.06);
+}
+
+.card-label,
+.step-label {
+  margin-bottom: 8px;
+  color: var(--blue);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.primary-button,
+.secondary-button,
+.stop-button,
+.upload-button {
+  min-height: 46px;
+  padding: 11px 18px;
+  border-radius: 12px;
+  font-weight: 750;
+  text-align: center;
+}
+
+/* Buttons */
+.primary-button {
+  border: 1px solid var(--blue);
+  color: #ffffff;
+  background: var(--blue);
+}
+
+.primary-button:hover:not(:disabled) {
+  border-color: #325b83;
+  background: #325b83;
+}
+
+.secondary-button,
+.upload-button {
+  border: 1px solid var(--border-colour);
+  color: var(--blue);
+  background: var(--card-background);
+}
+
+.secondary-button:hover:not(:disabled),
+.upload-button:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.stop-button {
+  border: 1px solid var(--risk-high);
+  color: #ffffff;
+  background: var(--risk-high);
+}
+
+.text-button,
+.danger-text-button {
+  padding: 5px;
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+}
+
+.text-button {
+  color: var(--blue);
+}
+
+.danger-text-button {
+  color: #8e3742;
+}
+
+.large-button {
+  min-width: 220px;
+  min-height: 52px;
+}
+
+.button-row,
+.input-actions,
+.choice-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Messages that tell the user something worked or went wrong */
+.error,
+.success {
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.error {
+  color: #7a2f38;
+  background: var(--risk-high-background);
+}
+
+.success {
+  color: var(--blue);
+  background: var(--pale-blue);
+}
+
+/* The sign up and log in screen */
+.auth-layout {
+  min-height: 100vh;
+  padding: 60px max(24px, 7vw);
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(340px, 500px);
+  gap: clamp(40px, 8vw, 120px);
+  align-items: center;
+}
+
+.auth-intro {
+  max-width: 700px;
+}
+
+.auth-intro > p:not(.card-label) {
+  max-width: 620px;
+  font-size: 1.08rem;
+}
+
+.medical-note {
+  margin-top: 30px;
+  padding: 16px 18px;
+  border-left: 4px solid var(--risk-medium);
+  background: var(--risk-medium-background);
+}
+
+.auth-card,
+.notice-card {
+  padding: clamp(24px, 5vw, 42px);
+}
+
+.auth-card {
+  display: grid;
+  gap: 18px;
+}
+
+.auth-tabs {
+  padding: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 12px;
+  background: var(--panel-background);
+}
+
+.auth-tab {
+  padding: 10px;
+  border: 0;
+  border-radius: 9px;
+  color: var(--soft-text);
+  background: transparent;
+  font-weight: 750;
+}
+
+.auth-tab.active {
+  color: var(--blue);
+  background: var(--card-background);
+  box-shadow: 0 3px 10px rgba(20, 45, 36, 0.08);
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  color: var(--text-colour);
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border-colour);
+  border-radius: 10px;
+  color: var(--text-colour);
+  background: var(--card-background);
+}
+
+input {
+  min-height: 46px;
+  padding: 10px 12px;
+}
+
+textarea {
+  padding: 12px;
+  resize: vertical;
+}
+
+/* The privacy notice screen */
+.notice-layout {
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: grid;
+  place-items: center;
+}
+
+.notice-card {
+  width: min(760px, 100%);
+}
+
+.notice-card h2 {
+  margin-top: 28px;
+  font-size: 1.08rem;
+}
+
+.checkbox-row {
+  margin: 28px 0;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-radius: 12px;
+  background: var(--page-background);
+}
+
+.checkbox-row input {
+  width: 18px;
+  min-height: 18px;
+  margin-top: 3px;
+}
+
+.loading-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* The header with the navigation and the log out button */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--border-colour);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+}
+
+.header-inner {
+  width: min(1180px, calc(100% - 36px));
+  min-height: 72px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 30px;
+  align-items: center;
+}
+
+.brand {
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 0;
+  color: var(--blue);
+  background: transparent;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.brand-mark {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 0 6px var(--pale-blue);
+}
+
+nav {
+  display: flex;
+  gap: 6px;
+}
+
+.nav-button {
+  padding: 9px 13px;
+  border: 0;
+  border-radius: 9px;
+  color: var(--soft-text);
+  background: transparent;
+  font-weight: 700;
+}
+
+.nav-button.active,
+.nav-button:hover {
+  color: var(--blue);
+  background: var(--pale-blue);
+}
+
+.account-menu {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--soft-text);
+  font-weight: 650;
+}
+
+/* The layout of each page */
+.page-content {
+  width: min(1120px, calc(100% - 36px));
+  min-height: calc(100vh - 160px);
+  margin: auto;
+  padding: 62px 0 80px;
+}
+
+.page-heading {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
+
+.page-heading h1 {
+  margin-bottom: 16px;
+}
+
+.checkin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.input-panel {
+  min-height: 330px;
+  padding: 28px;
+}
+
+.input-heading,
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.input-heading h2 {
+  margin-bottom: 8px;
+}
+
+.time-limit,
+.section-heading > span {
+  color: var(--faint-text);
+  font-size: 0.86rem;
+  white-space: nowrap;
+}
+
+.upload-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The camera and the photograph and audio previews */
+.preview-box,
+.camera-box {
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid var(--border-colour);
+  border-radius: 14px;
+  background: var(--page-background);
+}
+
+.preview-box {
+  display: grid;
+  gap: 14px;
+}
+
+.preview-box audio {
+  width: 100%;
+}
+
+.preview-box img,
+.camera-box video {
+  width: 100%;
+  max-height: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.hidden-canvas {
+  display: none;
+}
+
+.submit-area {
+  padding-top: 28px;
+  text-align: center;
+}
+
+.submit-area p {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+}
+
+/* The dropout risk estimate on the result screen */
+.result-summary {
+  margin-bottom: 28px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 42px;
+  align-items: center;
+  border-radius: 24px;
+  background: var(--panel-background);
+}
+
+.risk-estimate {
+  --risk-colour: var(--risk-low);
+  --risk-background: var(--risk-low-background);
+  padding: 24px;
+  border: 1px solid var(--border-colour);
+  border-radius: 18px;
+  background: var(--card-background);
+}
+
+.estimate-title {
+  margin-bottom: 10px;
+  color: var(--faint-text);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.estimate-value {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.estimate-value strong {
+  color: var(--text-colour);
+  font-size: 2.6rem;
+}
+
+.estimate-value span {
+  color: var(--faint-text);
+  font-size: 0.82rem;
+}
+
+.estimate-track {
+  height: 10px;
+  margin: 16px 0 10px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--panel-background);
+}
+
+.estimate-track span {
+  height: 100%;
+  display: block;
+  border-radius: inherit;
+  background: var(--risk-colour);
+}
+
+.estimate-level {
+  margin: 0;
+  color: var(--risk-colour);
+  font-weight: 800;
+}
+
+.risk-medium {
+  --risk-colour: var(--risk-medium);
+  --risk-background: var(--risk-medium-background);
+}
+
+.risk-high {
+  --risk-colour: var(--risk-high);
+  --risk-background: var(--risk-high-background);
+}
+
+/* The analysis cards on the result screen */
+.analysis-grid {
+  margin-bottom: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.analysis-card,
+.recommendation-card,
+.feedback-card,
+.chart-card,
+.baseline-card {
+  padding: 26px;
+}
+
+.analysis-card blockquote {
+  margin: 0;
+  color: var(--soft-text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* The recommendations and the feedback form */
+.recommendation-card {
+  margin-bottom: 22px;
+  border-left: 5px solid var(--blue);
+}
+
+.recommendation-card li + li {
+  margin-top: 8px;
+}
+
+.feedback-card {
+  margin-bottom: 24px;
+}
+
+.choice-button {
+  min-width: 90px;
+  padding: 10px 18px;
+  border: 1px solid var(--border-colour);
+  border-radius: 10px;
+  color: var(--soft-text);
+  background: var(--card-background);
+  font-weight: 750;
+}
+
+.choice-button.selected {
+  border-color: var(--blue);
+  color: var(--blue);
+  background: var(--pale-blue);
+}
+
+.feedback-card label {
+  margin: 20px 0;
+}
+
+.result-actions {
+  justify-content: flex-end;
+}
+
+/* The dashboard numbers and the personal baseline */
+.dashboard-heading {
+  max-width: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.dashboard-heading > div {
+  max-width: 720px;
+}
+
+.stats-grid {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.stat-card {
+  padding: 20px;
+  border: 1px solid var(--border-colour);
+  border-radius: 16px;
+  background: var(--card-background);
+}
+
+.stat-card span {
+  display: block;
+  color: var(--faint-text);
+  font-size: 0.86rem;
+}
+
+.stat-card strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--blue);
+  font-size: 1.7rem;
+}
+
+.baseline-card {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.baseline-card h2,
+.baseline-card p {
+  margin-bottom: 0;
+}
+
+.baseline-values {
+  display: flex;
+  gap: 24px;
+}
+
+.baseline-values div {
+  min-width: 90px;
+}
+
+.baseline-values dt {
+  color: var(--faint-text);
+  font-size: 0.78rem;
+}
+
+.baseline-values dd {
+  margin: 4px 0 0;
+  color: var(--text-colour);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+/* The risk chart and its colour key */
+.chart-card {
+  margin-bottom: 34px;
+}
+
+.chart-wrapper {
+  overflow-x: auto;
+}
+
+.trend-chart {
+  width: 100%;
+  min-width: 620px;
+}
+
+.chart-grid-line {
+  stroke: var(--panel-background);
+  stroke-width: 1;
+}
+
+.chart-label {
+  fill: var(--faint-text);
+  font-size: 11px;
+}
+
+.trend-line {
+  fill: none;
+  stroke: var(--bright-blue);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-key {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.chart-key span {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  color: var(--soft-text);
+  font-size: 0.85rem;
+}
+
+.key-dot {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.low-dot {
+  background: var(--risk-low);
+}
+
+.medium-dot {
+  background: var(--risk-medium);
+}
+
+.high-dot {
+  background: var(--risk-high);
+}
+
+/* The history of past check-ins */
+.history-section {
+  margin-top: 30px;
+}
+
+.history-list {
+  display: grid;
+  gap: 12px;
+}
+
+.history-card {
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.history-card h3 {
+  margin-bottom: 12px;
+}
+
+.history-card p {
+  margin-bottom: 4px;
+}
+
+.history-date {
+  color: var(--faint-text);
+  font-size: 0.82rem;
+}
+
+.history-score {
+  min-width: 110px;
+  display: grid;
+  align-content: center;
+  justify-items: end;
+}
+
+.history-score strong {
+  color: var(--blue);
+  font-size: 1.8rem;
+}
+
+.history-score span {
+  color: var(--faint-text);
+  font-size: 0.78rem;
+}
+
+.history-score button {
+  margin-top: 16px;
+}
+
+.empty-message {
+  padding: 30px;
+  border: 1px dashed var(--border-colour);
+  border-radius: 14px;
+  text-align: center;
+}
+
+/* The note at the bottom of every page */
+.app-footer {
+  padding: 24px 20px;
+  border-top: 1px solid var(--border-colour);
+  text-align: center;
+  background: var(--card-background);
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* Smaller screen adjustment */
+@media (max-width: 900px) {
+  .auth-layout,
+  .checkin-grid,
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-layout {
+    padding-top: 40px;
+  }
+
+  .auth-intro {
+    max-width: 760px;
+  }
+
+  .header-inner {
+    grid-template-columns: auto 1fr;
+  }
+
+  .header-inner nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding-bottom: 10px;
+  }
+
+  .account-menu {
+    justify-self: end;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .baseline-card {
+    grid-template-columns: 1fr;
+  }
+
+  .result-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Make everything fit on a phone */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .auth-layout {
+    padding: 28px 16px;
+  }
+
+  .header-inner,
+  .page-content {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .header-inner {
+    gap: 12px;
+  }
+
+  .account-menu span {
+    display: none;
+  }
+
+  .nav-button {
+    flex: 1;
+  }
+
+  .page-content {
+    padding-top: 38px;
+  }
+
+  .dashboard-heading,
+  .input-heading,
+  .section-heading {
+    display: block;
+  }
+
+  .dashboard-heading button {
+    margin-top: 10px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-summary {
+    padding: 24px 18px;
+  }
+
+  .history-card {
+    display: block;
+  }
+
+  .history-score {
+    margin-top: 18px;
+    justify-items: start;
+  }
+
+  .button-row > button,
+  .input-actions > button,
+  .upload-button {
+    width: 100%;
+  }
+}
+
+/* The transcript box where the user checks and corrects the text */
+.transcript-editor {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 28px;
+  overflow: visible;
+}
+
+.transcript-editor .step-label {
+  margin: 0 0 10px;
+}
+
+.transcript-editor h2 {
+  margin: 0 0 14px;
+}
+
+.transcript-editor > p:not(.step-label) {
+  margin-top: 0;
+}
+
+.transcript-label {
+  display: block;
+  margin: 22px 0 8px;
+  font-weight: 700;
+}
+
+.transcript-editor textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 150px;
+  padding: 14px;
+  resize: vertical;
+}
+
+.character-count {
+  margin: 7px 0 18px;
+  color: var(--faint-text);
+  font-size: 0.82rem;
+}
+
+.transcript-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.transcript-saved {
+  margin: 14px 0 0;
+  color: var(--blue);
+  font-weight: 700;
+}
+.analysis-card .secondary-button {
+  margin-top: 16px;
+}
+
+/* The form for correcting the emotional signal or the nutrition band */
+.correction-card {
+  margin-bottom: 22px;
+  padding: 26px;
+  border-left: 5px solid var(--blue);
+}
+
+.correction-card > label {
+  margin-top: 18px;
+}
+
+.correction-card input,
+.correction-card select {
+  margin-top: 7px;
+}
+
+.correction-card .button-row {
+  margin-top: 22px;
+  justify-content: flex-end;
+}
+
+select {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-colour);
+  border-radius: 10px;
+  color: var(--text-colour);
+  background: var(--card-background);
+}
+
+select:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.small-note {
+  color: var(--soft-text);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.steps-left {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--soft-text);
+}
+
+.steps-left li {
+  margin-bottom: 0.25rem;
+}
+
+/* The three meal readings the user can tap */
+.meal-reading {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border-colour);
+  border-radius: 10px;
+  background: var(--page-background);
+}
+
+.meal-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.85rem;
+}
+
+.meal-choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--border-colour);
+  border-radius: 999px;
+  background: var(--card-background);
+  cursor: pointer;
+  font-size: 0.95rem;
+  min-height: 44px;
+}
+
+.meal-choice:hover {
+  border-color: var(--blue);
+}
+
+.meal-choice.selected {
+  border-color: var(--blue);
+  background: var(--pale-blue);
+  font-weight: 600;
+}
+
+.meal-choice:focus-within {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.detected-tag {
+  font-size: 0.75rem;
+  color: var(--soft-text);
+  background: var(--panel-background);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.food-readings {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0.7rem 0.85rem;
+  display: grid;
+  gap: 0.5rem;
+  background: #f6f9fc;
+  border: 1px solid #e3ebf3;
+  border-radius: 10px;
+}
+
+.food-reading {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 0.6rem;
+  align-items: baseline;
+  font-size: 0.9rem;
+}
+
+.food-reading-source {
+  color: #55606c;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.food-reading-label {
+  color: #24303c;
+}
+
+.food-reading.pickable {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  margin: -0.45rem -0.55rem;
+}
+
+.food-reading.pickable:hover {
+  border-color: #b7cbe0;
+  background: #eef4fa;
+}
+
+.food-reading.pickable:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.food-reading.pickable.selected {
+  border-color: var(--blue);
+  background: var(--pale-blue);
+}
+
+.food-reading-band {
+  margin-left: 0.5rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--soft-text);
+  background: var(--panel-background);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.food-reading-band.unsure {
+  color: #7a828c;
+  background: transparent;
+  border: 1px dashed #c3ccd6;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Make the risk estimate fit on a very small screen */
+@media (max-width: 30rem) {
+  .food-reading {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+
+.estimate-track {
+  height: 10px;
+  border-radius: 99px;
+  background: var(--panel-background);
+  box-shadow: inset 0 1px 2px rgba(25, 27, 38, 0.07);
+  overflow: hidden;
+}
+
+.estimate-value {
+  color: var(--risk-colour, var(--text-colour));
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.estimate-level {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--risk-colour, var(--blue));
+  background: var(--risk-background, var(--pale-blue));
+}
+
+.chart-grid-line {
+  stroke: var(--border-colour);
+  stroke-width: 1;
+}
+
+
+/* The final look of the app */
+body {
+  background-color: var(--page-background);
+  background-image:
+    radial-gradient(
+      780px circle at 12% -8%,
+      rgba(62, 110, 158, 0.055),
+      transparent 62%
+    ),
+    radial-gradient(
+      620px circle at 92% 4%,
+      rgba(62, 110, 158, 0.035),
+      transparent 58%
+    );
+  background-attachment: fixed;
+}
+
+
+.card,
+.input-panel,
+.auth-card,
+.notice-card,
+.analysis-card,
+.recommendation-card,
+.feedback-card,
+.chart-card,
+.baseline-card,
+.history-card {
+  border: 1px solid var(--border-colour);
+  border-radius: var(--radius);
+  background: var(--card-background);
+  box-shadow:
+    0 1px 1px rgba(25, 27, 38, 0.04),
+    0 4px 10px -4px rgba(25, 27, 38, 0.06),
+    0 16px 32px -20px rgba(25, 27, 38, 0.16);
+}
+
+
+h1 {
+  letter-spacing: -0.035em;
+  font-weight: 800;
+}
+
+h2 {
+  letter-spacing: -0.018em;
+  font-weight: 750;
+}
+
+h3 {
+  letter-spacing: -0.01em;
+}
+
+
+.card-label,
+.step-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-label::before,
+.step-label::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  opacity: 0.55;
+  flex: none;
+}
+
+
+.section-heading {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-colour);
+  margin-bottom: 16px;
+}
+
+
+.estimate-value,
+.history-score,
+.baseline-values,
+.chart-label,
+.character-count {
+  font-variant-numeric: tabular-nums;
+}
+
+
+.history-list > * + * {
+  border-top: 1px solid var(--border-colour);
+}
+
+
+.app-header {
+  border-bottom: 1px solid var(--border-colour);
+  box-shadow: 0 1px 0 rgba(62, 110, 158, 0.06);
+}
+
+.brand-mark {
+  box-shadow:
+    0 0 0 5px var(--pale-blue),
+    0 1px 3px rgba(62, 110, 158, 0.35);
+}
+
+
+.primary-button,
+.secondary-button,
+.upload-button,
+.stop-button {
+  transition:
+    transform 120ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.primary-button {
+  box-shadow:
+    0 1px 2px rgba(25, 27, 38, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.primary-button:hover:not(:disabled),
+.secondary-button:hover:not(:disabled),
+.upload-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.primary-button:active:not(:disabled),
+.secondary-button:active:not(:disabled),
+.upload-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+
+.meal-choice {
+  transition:
+    border-color 140ms ease,
+    background-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.meal-choice.selected {
+  box-shadow: 0 0 0 1px var(--blue);
+}
+
+
+.analysis-card blockquote {
+  position: relative;
+  padding-left: 18px;
+  border-left: 2px solid var(--blue);
+  font-style: normal;
+  color: var(--soft-text);
+}
+
+
+/* Turn off movement for users who have asked their device for less motion for inclusive design */
+@media (prefers-reduced-motion: reduce) {
+  .primary-button,
+  .secondary-button,
+  .upload-button,
+  .stop-button,
+  .meal-choice {
+    transition: none;
+  }
+
+  .primary-button:hover:not(:disabled),
+  .secondary-button:hover:not(:disabled),
+  .upload-button:hover:not(:disabled) {
+    transform: none;
+  }
+}
+
+
+/* The final look of the meal readings and the nutrition band choices */
+.meal-reading {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.meal-reading .step-label,
+.meal-reading .hint {
+  justify-self: start;
+  text-align: left;
+}
+
+.meal-reading .meal-choices {
+  justify-content: center;
+}
+
+
+.meal-choices {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 340px;
+  margin-top: 0.85rem;
+}
+
+.meal-choice {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.7rem;
+  align-items: center;
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border-colour);
+  border-radius: var(--radius-sm);
+  background: var(--card-background);
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: left;
+  min-height: 52px;
+}
+
+.meal-choice input[type="radio"] {
+  width: 20px;
+  min-height: 20px;
+  margin: 0;
+  accent-color: var(--blue);
+  flex: none;
+}
+
+.meal-choice.selected {
+  border-color: var(--blue);
+  background: var(--pale-blue);
+  font-weight: 600;
+  box-shadow: 0 0 0 1px var(--blue);
+}
+
+.detected-tag {
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.meal-none-match {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-size: 0.9rem;
+}
+
+.field-label {
+  margin: 0.85rem 0 0;
+  color: var(--text-colour);
+  font-weight: 700;
+}
+
+.transcript-warning {
+  margin: 14px 0 4px;
+  padding: 12px 14px;
+  border-left: 4px solid #c9a227;
+  background: #fdf6e3;
+  color: #6b5710;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}

@@ -1,0 +1,247 @@
+{
+  "evaluation": "AI.FIT emotion model comparison",
+  "labels_shown_to_the_model": {
+    "burnout": "burnt out",
+    "low motivation": "unmotivated",
+    "fatigue": "physically tired",
+    "high motivation": "high motivation",
+    "neutral": "neutral"
+  },
+  "hypothesis_template": "This person is feeling {}.",
+  "models": [
+    {
+      "family": "DeBERTa",
+      "model_name": "DeBERTa V3 Large MNLI FEVER ANLI Ling WANLI",
+      "checkpoint": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "application_model": false,
+      "overall": {
+        "sentences": 300,
+        "high_risk_found": 96,
+        "high_risk_recall_percent": 80.0,
+        "mean_inference_seconds": 26.8954,
+        "per_label": {
+          "burnout": {
+            "true_positive": 37,
+            "total": 60,
+            "recall_percent": 61.67
+          },
+          "low motivation": {
+            "true_positive": 59,
+            "total": 60,
+            "recall_percent": 98.33
+          },
+          "fatigue": {
+            "true_positive": 55,
+            "total": 60,
+            "recall_percent": 91.67
+          },
+          "high motivation": {
+            "true_positive": 60,
+            "total": 60,
+            "recall_percent": 100.0
+          },
+          "neutral": {
+            "true_positive": 15,
+            "total": 60,
+            "recall_percent": 25.0
+          }
+        }
+      }
+    },
+    {
+      "family": "DeBERTa",
+      "model_name": "DeBERTa V3 Base MNLI FEVER ANLI",
+      "checkpoint": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+      "application_model": true,
+      "overall": {
+        "sentences": 300,
+        "high_risk_found": 92,
+        "high_risk_recall_percent": 76.67,
+        "mean_inference_seconds": 8.8679,
+        "per_label": {
+          "burnout": {
+            "true_positive": 40,
+            "total": 60,
+            "recall_percent": 66.67
+          },
+          "low motivation": {
+            "true_positive": 52,
+            "total": 60,
+            "recall_percent": 86.67
+          },
+          "fatigue": {
+            "true_positive": 47,
+            "total": 60,
+            "recall_percent": 78.33
+          },
+          "high motivation": {
+            "true_positive": 60,
+            "total": 60,
+            "recall_percent": 100.0
+          },
+          "neutral": {
+            "true_positive": 37,
+            "total": 60,
+            "recall_percent": 61.67
+          }
+        }
+      }
+    },
+    {
+      "family": "BART",
+      "model_name": "BART Large MNLI",
+      "checkpoint": "facebook/bart-large-mnli",
+      "application_model": false,
+      "overall": {
+        "sentences": 300,
+        "high_risk_found": 85,
+        "high_risk_recall_percent": 70.83,
+        "mean_inference_seconds": 1.926,
+        "per_label": {
+          "burnout": {
+            "true_positive": 28,
+            "total": 60,
+            "recall_percent": 46.67
+          },
+          "low motivation": {
+            "true_positive": 57,
+            "total": 60,
+            "recall_percent": 95.0
+          },
+          "fatigue": {
+            "true_positive": 50,
+            "total": 60,
+            "recall_percent": 83.33
+          },
+          "high motivation": {
+            "true_positive": 58,
+            "total": 60,
+            "recall_percent": 96.67
+          },
+          "neutral": {
+            "true_positive": 28,
+            "total": 60,
+            "recall_percent": 46.67
+          }
+        }
+      }
+    },
+    {
+      "family": "RoBERTa",
+      "model_name": "RoBERTa Large MNLI",
+      "checkpoint": "FacebookAI/roberta-large-mnli",
+      "application_model": false,
+      "overall": {
+        "sentences": 300,
+        "high_risk_found": 82,
+        "high_risk_recall_percent": 68.33,
+        "mean_inference_seconds": 1.6039,
+        "per_label": {
+          "burnout": {
+            "true_positive": 32,
+            "total": 60,
+            "recall_percent": 53.33
+          },
+          "low motivation": {
+            "true_positive": 50,
+            "total": 60,
+            "recall_percent": 83.33
+          },
+          "fatigue": {
+            "true_positive": 33,
+            "total": 60,
+            "recall_percent": 55.0
+          },
+          "high motivation": {
+            "true_positive": 56,
+            "total": 60,
+            "recall_percent": 93.33
+          },
+          "neutral": {
+            "true_positive": 32,
+            "total": 60,
+            "recall_percent": 53.33
+          }
+        }
+      }
+    },
+    {
+      "family": "DeBERTa",
+      "model_name": "DeBERTa V3 Large Zero-shot V2",
+      "checkpoint": "MoritzLaurer/deberta-v3-large-zeroshot-v2.0",
+      "application_model": false,
+      "overall": {
+        "sentences": 300,
+        "high_risk_found": 50,
+        "high_risk_recall_percent": 41.67,
+        "mean_inference_seconds": 26.9482,
+        "per_label": {
+          "burnout": {
+            "true_positive": 22,
+            "total": 60,
+            "recall_percent": 36.67
+          },
+          "low motivation": {
+            "true_positive": 28,
+            "total": 60,
+            "recall_percent": 46.67
+          },
+          "fatigue": {
+            "true_positive": 42,
+            "total": 60,
+            "recall_percent": 70.0
+          },
+          "high motivation": {
+            "true_positive": 40,
+            "total": 60,
+            "recall_percent": 66.67
+          },
+          "neutral": {
+            "true_positive": 60,
+            "total": 60,
+            "recall_percent": 100.0
+          }
+        }
+      }
+    },
+    {
+      "family": "DeBERTa",
+      "model_name": "DeBERTa V3 Base Zero-shot V2",
+      "checkpoint": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "application_model": false,
+      "overall": {
+        "sentences": 300,
+        "high_risk_found": 40,
+        "high_risk_recall_percent": 33.33,
+        "mean_inference_seconds": 8.4637,
+        "per_label": {
+          "burnout": {
+            "true_positive": 8,
+            "total": 60,
+            "recall_percent": 13.33
+          },
+          "low motivation": {
+            "true_positive": 32,
+            "total": 60,
+            "recall_percent": 53.33
+          },
+          "fatigue": {
+            "true_positive": 34,
+            "total": 60,
+            "recall_percent": 56.67
+          },
+          "high motivation": {
+            "true_positive": 51,
+            "total": 60,
+            "recall_percent": 85.0
+          },
+          "neutral": {
+            "true_positive": 35,
+            "total": 60,
+            "recall_percent": 58.33
+          }
+        }
+      }
+    }
+  ]
+}

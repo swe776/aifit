@@ -1,0 +1,79 @@
+{
+  "evaluation": "Can a food model place a photographed meal into a band?",
+  "photographs": 184,
+  "each_model": {
+    "Food-101 SigLIP2 93M": {
+      "photographs": 184,
+      "macro_f1_percent": 34.51,
+      "per_band": {
+        "balanced": {
+          "correct": 0,
+          "total": 12,
+          "said": 4,
+          "f1_percent": 0.0
+        },
+        "mixed": {
+          "correct": 55,
+          "total": 93,
+          "said": 100,
+          "f1_percent": 56.99
+        },
+        "poor": {
+          "correct": 37,
+          "total": 79,
+          "said": 80,
+          "f1_percent": 46.54
+        }
+      }
+    },
+    "Kaludi Food Categories 12": {
+      "photographs": 184,
+      "macro_f1_percent": 28.03,
+      "per_band": {
+        "balanced": {
+          "correct": 0,
+          "total": 12,
+          "said": 0,
+          "f1_percent": 0.0
+        },
+        "mixed": {
+          "correct": 79,
+          "total": 93,
+          "said": 155,
+          "f1_percent": 63.71
+        },
+        "poor": {
+          "correct": 11,
+          "total": 79,
+          "said": 29,
+          "f1_percent": 20.37
+        }
+      }
+    },
+    "BLIP Large": {
+      "photographs": 184,
+      "macro_f1_percent": 38.26,
+      "per_band": {
+        "balanced": {
+          "correct": 5,
+          "total": 12,
+          "said": 27,
+          "f1_percent": 25.64
+        },
+        "mixed": {
+          "correct": 55,
+          "total": 93,
+          "said": 103,
+          "f1_percent": 56.12
+        },
+        "poor": {
+          "correct": 17,
+          "total": 79,
+          "said": 24,
+          "f1_percent": 33.01
+        }
+      }
+    }
+  },
+  "best_model": "BLIP Large"
+}

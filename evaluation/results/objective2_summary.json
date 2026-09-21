@@ -1,0 +1,25 @@
+{
+  "evaluation": "AI.FIT Objective 2 evaluation",
+  "case_count": 36,
+  "unique_journals": 12,
+  "rater_count": 3,
+  "fleiss_kappa": 0.861,
+  "voice_only": {
+    "cases": 36,
+    "correct": 26,
+    "accuracy_percent": 72.22
+  },
+  "both_together": {
+    "cases": 36,
+    "correct": 24,
+    "accuracy_percent": 66.67
+  },
+  "meal_only": {
+    "cases": 36,
+    "correct": 13,
+    "accuracy_percent": 36.11
+  },
+  "three_combinations_tested": true,
+  "results_show_which_performed_better": true,
+  "objective_met": true
+}

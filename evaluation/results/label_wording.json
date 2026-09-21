@@ -1,0 +1,307 @@
+{
+  "evaluation": "Label wordings, one change at a time",
+  "chosen": "D",
+  "model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "sentences_per_label": 20,
+  "sentences": 100,
+  "seed": 42,
+  "template": "This person is feeling {}.",
+  "wordings": {
+    "A. plain names from the literature review": {
+      "labels_shown_to_the_model": {
+        "burnout": "burnout",
+        "low motivation": "low motivation",
+        "fatigue": "fatigue",
+        "high motivation": "high motivation",
+        "neutral": "neutral"
+      },
+      "accuracy_percent": 71.0,
+      "per_label_recall": {
+        "burnout": {
+          "correct": 4,
+          "total": 20,
+          "recall_percent": 20.0
+        },
+        "low motivation": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        },
+        "fatigue": {
+          "correct": 15,
+          "total": 20,
+          "recall_percent": 75.0
+        },
+        "high motivation": {
+          "correct": 20,
+          "total": 20,
+          "recall_percent": 100.0
+        },
+        "neutral": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        }
+      }
+    },
+    "B. burnout only": {
+      "labels_shown_to_the_model": {
+        "burnout": "burnt out",
+        "low motivation": "low motivation",
+        "fatigue": "fatigue",
+        "high motivation": "high motivation",
+        "neutral": "neutral"
+      },
+      "accuracy_percent": 73.0,
+      "per_label_recall": {
+        "burnout": {
+          "correct": 6,
+          "total": 20,
+          "recall_percent": 30.0
+        },
+        "low motivation": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        },
+        "fatigue": {
+          "correct": 15,
+          "total": 20,
+          "recall_percent": 75.0
+        },
+        "high motivation": {
+          "correct": 20,
+          "total": 20,
+          "recall_percent": 100.0
+        },
+        "neutral": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        }
+      }
+    },
+    "C. burnout, then low motivation": {
+      "labels_shown_to_the_model": {
+        "burnout": "burnt out",
+        "low motivation": "unmotivated",
+        "fatigue": "fatigue",
+        "high motivation": "high motivation",
+        "neutral": "neutral"
+      },
+      "accuracy_percent": 75.0,
+      "per_label_recall": {
+        "burnout": {
+          "correct": 7,
+          "total": 20,
+          "recall_percent": 35.0
+        },
+        "low motivation": {
+          "correct": 15,
+          "total": 20,
+          "recall_percent": 75.0
+        },
+        "fatigue": {
+          "correct": 17,
+          "total": 20,
+          "recall_percent": 85.0
+        },
+        "high motivation": {
+          "correct": 20,
+          "total": 20,
+          "recall_percent": 100.0
+        },
+        "neutral": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        }
+      }
+    },
+    "D. burnout, low motivation, then fatigue": {
+      "labels_shown_to_the_model": {
+        "burnout": "burnt out",
+        "low motivation": "unmotivated",
+        "fatigue": "physically tired",
+        "high motivation": "high motivation",
+        "neutral": "neutral"
+      },
+      "accuracy_percent": 78.0,
+      "per_label_recall": {
+        "burnout": {
+          "correct": 15,
+          "total": 20,
+          "recall_percent": 75.0
+        },
+        "low motivation": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        },
+        "fatigue": {
+          "correct": 14,
+          "total": 20,
+          "recall_percent": 70.0
+        },
+        "high motivation": {
+          "correct": 20,
+          "total": 20,
+          "recall_percent": 100.0
+        },
+        "neutral": {
+          "correct": 13,
+          "total": 20,
+          "recall_percent": 65.0
+        }
+      }
+    },
+    "E. then high motivation as motivated": {
+      "labels_shown_to_the_model": {
+        "burnout": "burnt out",
+        "low motivation": "unmotivated",
+        "fatigue": "physically tired",
+        "high motivation": "motivated",
+        "neutral": "neutral"
+      },
+      "accuracy_percent": 67.0,
+      "per_label_recall": {
+        "burnout": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        },
+        "low motivation": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        },
+        "fatigue": {
+          "correct": 13,
+          "total": 20,
+          "recall_percent": 65.0
+        },
+        "high motivation": {
+          "correct": 20,
+          "total": 20,
+          "recall_percent": 100.0
+        },
+        "neutral": {
+          "correct": 2,
+          "total": 20,
+          "recall_percent": 10.0
+        }
+      }
+    },
+    "F. burnout, low motivation as less motivated": {
+      "labels_shown_to_the_model": {
+        "burnout": "burnt out",
+        "low motivation": "less motivated",
+        "fatigue": "fatigue",
+        "high motivation": "high motivation",
+        "neutral": "neutral"
+      },
+      "accuracy_percent": 72.0,
+      "per_label_recall": {
+        "burnout": {
+          "correct": 6,
+          "total": 20,
+          "recall_percent": 30.0
+        },
+        "low motivation": {
+          "correct": 15,
+          "total": 20,
+          "recall_percent": 75.0
+        },
+        "fatigue": {
+          "correct": 15,
+          "total": 20,
+          "recall_percent": 75.0
+        },
+        "high motivation": {
+          "correct": 20,
+          "total": 20,
+          "recall_percent": 100.0
+        },
+        "neutral": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        }
+      }
+    },
+    "G. burnout, fatigue as plain tired": {
+      "labels_shown_to_the_model": {
+        "burnout": "burnt out",
+        "low motivation": "low motivation",
+        "fatigue": "tired",
+        "high motivation": "high motivation",
+        "neutral": "neutral"
+      },
+      "accuracy_percent": 70.0,
+      "per_label_recall": {
+        "burnout": {
+          "correct": 1,
+          "total": 20,
+          "recall_percent": 5.0
+        },
+        "low motivation": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        },
+        "fatigue": {
+          "correct": 18,
+          "total": 20,
+          "recall_percent": 90.0
+        },
+        "high motivation": {
+          "correct": 20,
+          "total": 20,
+          "recall_percent": 100.0
+        },
+        "neutral": {
+          "correct": 15,
+          "total": 20,
+          "recall_percent": 75.0
+        }
+      }
+    },
+    "H. the alternative set, less motivated and tired": {
+      "labels_shown_to_the_model": {
+        "burnout": "burnt out",
+        "low motivation": "less motivated",
+        "fatigue": "tired",
+        "high motivation": "motivated",
+        "neutral": "neutral"
+      },
+      "accuracy_percent": 55.0,
+      "per_label_recall": {
+        "burnout": {
+          "correct": 2,
+          "total": 20,
+          "recall_percent": 10.0
+        },
+        "low motivation": {
+          "correct": 14,
+          "total": 20,
+          "recall_percent": 70.0
+        },
+        "fatigue": {
+          "correct": 16,
+          "total": 20,
+          "recall_percent": 80.0
+        },
+        "high motivation": {
+          "correct": 20,
+          "total": 20,
+          "recall_percent": 100.0
+        },
+        "neutral": {
+          "correct": 3,
+          "total": 20,
+          "recall_percent": 15.0
+        }
+      }
+    }
+  }
+}

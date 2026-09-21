@@ -1,0 +1,1202 @@
+{
+  "evaluation": "AI.FIT rule-based recommendation evaluation",
+  "reference_grid_path": "evaluation\\data\\risk_grid.csv",
+  "evaluation_case_count": 15,
+  "intended_risk_level_counts": {
+    "high": 7,
+    "medium": 2,
+    "low": 6
+  },
+  "checks": {
+    "risk_grid": {
+      "passed": 15,
+      "total": 15,
+      "met": true
+    },
+    "risk_changes": {
+      "passed": 60,
+      "total": 60,
+      "met": true
+    },
+    "high_risk_advice": {
+      "passed": 7,
+      "total": 7,
+      "met": true
+    },
+    "medium_risk_advice": {
+      "passed": 2,
+      "total": 2,
+      "met": true
+    },
+    "low_risk_silence": {
+      "passed": 6,
+      "total": 6,
+      "met": true
+    },
+    "repeat_signal_rule": {
+      "passed": 8,
+      "total": 8,
+      "met": true
+    },
+    "increasing_risk": {
+      "passed": 15,
+      "total": 15,
+      "met": true
+    },
+    "no_recommendations_for_a_decreasing_low_risk": {
+      "passed": 6,
+      "total": 6,
+      "met": true
+    }
+  },
+  "all_checks_passed": true,
+  "cases": [
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "balanced",
+      "intended_risk_level": "high",
+      "produced_risk_level": "high",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tip_count": 2,
+      "tips_json": "[\"Consider taking a full rest day before your next workout session.\", \"Consider reducing the intensity or duration of one workout this week.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "mixed",
+      "intended_risk_level": "high",
+      "produced_risk_level": "high",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tip_count": 3,
+      "tips_json": "[\"Consider taking a full rest day before your next workout session.\", \"Consider reducing the intensity or duration of one workout this week.\", \"Your meal shows a mix of foods. Consider adding more variety where possible.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "poor",
+      "intended_risk_level": "high",
+      "produced_risk_level": "high",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tip_count": 3,
+      "tips_json": "[\"Consider taking a full rest day before your next workout session.\", \"Consider reducing the intensity or duration of one workout this week.\", \"Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "balanced",
+      "intended_risk_level": "medium",
+      "produced_risk_level": "medium",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tip_count": 1,
+      "tips_json": "[\"Consider giving a little more time for recovery before your next session.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "mixed",
+      "intended_risk_level": "medium",
+      "produced_risk_level": "medium",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tip_count": 2,
+      "tips_json": "[\"Consider giving a little more time for recovery before your next session.\", \"Your meal shows a mix of foods. Consider adding more variety where possible.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "poor",
+      "intended_risk_level": "high",
+      "produced_risk_level": "high",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tip_count": 3,
+      "tips_json": "[\"Consider keeping your next workout lighter and giving more time for recovery.\", \"Try to get a good night of sleep before your next workout session and maintain a good sleep routine.\", \"Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "balanced",
+      "intended_risk_level": "low",
+      "produced_risk_level": "low",
+      "risk_level_matches_grid": true,
+      "headline": "",
+      "tip_count": 0,
+      "tips_json": "[]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "mixed",
+      "intended_risk_level": "low",
+      "produced_risk_level": "low",
+      "risk_level_matches_grid": true,
+      "headline": "",
+      "tip_count": 0,
+      "tips_json": "[]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "poor",
+      "intended_risk_level": "low",
+      "produced_risk_level": "low",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in looks okay but your meal might not be supporting your training.",
+      "tip_count": 1,
+      "tips_json": "[\"Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "balanced",
+      "intended_risk_level": "high",
+      "produced_risk_level": "high",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tip_count": 2,
+      "tips_json": "[\"Think about your long term goals and keep going.\", \"Consider reducing the intensity or duration of one workout this week and plan out your next workout session.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "mixed",
+      "intended_risk_level": "high",
+      "produced_risk_level": "high",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tip_count": 3,
+      "tips_json": "[\"Think about your long term goals and keep going.\", \"Consider reducing the intensity or duration of one workout this week and plan out your next workout session.\", \"Your meal shows a mix of foods. Consider adding more variety where possible.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "poor",
+      "intended_risk_level": "high",
+      "produced_risk_level": "high",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tip_count": 3,
+      "tips_json": "[\"Think about your long term goals and keep going.\", \"Consider reducing the intensity or duration of one workout this week and plan out your next workout session.\", \"Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals.\"]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "balanced",
+      "intended_risk_level": "low",
+      "produced_risk_level": "low",
+      "risk_level_matches_grid": true,
+      "headline": "",
+      "tip_count": 0,
+      "tips_json": "[]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "mixed",
+      "intended_risk_level": "low",
+      "produced_risk_level": "low",
+      "risk_level_matches_grid": true,
+      "headline": "",
+      "tip_count": 0,
+      "tips_json": "[]",
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "poor",
+      "intended_risk_level": "low",
+      "produced_risk_level": "low",
+      "risk_level_matches_grid": true,
+      "headline": "Your check-in looks okay but your meal might not be supporting your training.",
+      "tip_count": 1,
+      "tips_json": "[\"Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals.\"]",
+      "expected_output_given": true
+    }
+  ],
+  "trend_cases": [
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "balanced",
+      "risk_level": "high",
+      "direction": "increasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "balanced",
+      "risk_level": "high",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "balanced",
+      "risk_level": "high",
+      "direction": "stable",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "balanced",
+      "risk_level": "high",
+      "direction": "none",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "direction": "increasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "direction": "stable",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "direction": "none",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "increasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "stable",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "none",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider taking a full rest day before your next workout session.",
+        "Consider reducing the intensity or duration of one workout this week.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "balanced",
+      "risk_level": "medium",
+      "direction": "increasing",
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Consider giving a little more time for recovery before your next session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "balanced",
+      "risk_level": "medium",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tips": [
+        "Consider giving a little more time for recovery before your next session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "balanced",
+      "risk_level": "medium",
+      "direction": "stable",
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tips": [
+        "Consider giving a little more time for recovery before your next session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "balanced",
+      "risk_level": "medium",
+      "direction": "none",
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tips": [
+        "Consider giving a little more time for recovery before your next session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "mixed",
+      "risk_level": "medium",
+      "direction": "increasing",
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Consider giving a little more time for recovery before your next session.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "mixed",
+      "risk_level": "medium",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tips": [
+        "Consider giving a little more time for recovery before your next session.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "mixed",
+      "risk_level": "medium",
+      "direction": "stable",
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tips": [
+        "Consider giving a little more time for recovery before your next session.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "mixed",
+      "risk_level": "medium",
+      "direction": "none",
+      "headline": "Your check-in suggests you might be starting to struggle.",
+      "tips": [
+        "Consider giving a little more time for recovery before your next session.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "increasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Consider keeping your next workout lighter and giving more time for recovery.",
+        "Try to get a good night of sleep before your next workout session and maintain a good sleep routine."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider keeping your next workout lighter and giving more time for recovery.",
+        "Try to get a good night of sleep before your next workout session and maintain a good sleep routine.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "stable",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider keeping your next workout lighter and giving more time for recovery.",
+        "Try to get a good night of sleep before your next workout session and maintain a good sleep routine.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "fatigue",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "none",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Consider keeping your next workout lighter and giving more time for recovery.",
+        "Try to get a good night of sleep before your next workout session and maintain a good sleep routine.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "balanced",
+      "risk_level": "low",
+      "direction": "increasing",
+      "headline": "Your risk is still low but this check-in is higher than your recent average.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "balanced",
+      "risk_level": "low",
+      "direction": "decreasing",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "balanced",
+      "risk_level": "low",
+      "direction": "stable",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "balanced",
+      "risk_level": "low",
+      "direction": "none",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "low",
+      "direction": "increasing",
+      "headline": "Your risk is still low but this check-in is higher than your recent average.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "low",
+      "direction": "decreasing",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "low",
+      "direction": "stable",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "low",
+      "direction": "none",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "poor",
+      "risk_level": "low",
+      "direction": "increasing",
+      "headline": "Your risk is still low but this check-in is higher than your recent average.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "poor",
+      "risk_level": "low",
+      "direction": "decreasing",
+      "headline": "Your check-in looks okay but your meal might not be supporting your training.",
+      "tips": [
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "poor",
+      "risk_level": "low",
+      "direction": "stable",
+      "headline": "Your check-in looks okay but your meal might not be supporting your training.",
+      "tips": [
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "high motivation",
+      "nutrition_category": "poor",
+      "risk_level": "low",
+      "direction": "none",
+      "headline": "Your check-in looks okay but your meal might not be supporting your training.",
+      "tips": [
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "balanced",
+      "risk_level": "high",
+      "direction": "increasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "balanced",
+      "risk_level": "high",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "balanced",
+      "risk_level": "high",
+      "direction": "stable",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "balanced",
+      "risk_level": "high",
+      "direction": "none",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "direction": "increasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "direction": "stable",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "direction": "none",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session.",
+        "Your meal shows a mix of foods. Consider adding more variety where possible."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "increasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "decreasing",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "stable",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "direction": "none",
+      "headline": "Your check-in suggests a higher risk of dropout.",
+      "tips": [
+        "Think about your long term goals and keep going.",
+        "Consider reducing the intensity or duration of one workout this week and plan out your next workout session.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "balanced",
+      "risk_level": "low",
+      "direction": "increasing",
+      "headline": "Your risk is still low but this check-in is higher than your recent average.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "balanced",
+      "risk_level": "low",
+      "direction": "decreasing",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "balanced",
+      "risk_level": "low",
+      "direction": "stable",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "balanced",
+      "risk_level": "low",
+      "direction": "none",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "mixed",
+      "risk_level": "low",
+      "direction": "increasing",
+      "headline": "Your risk is still low but this check-in is higher than your recent average.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "mixed",
+      "risk_level": "low",
+      "direction": "decreasing",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "mixed",
+      "risk_level": "low",
+      "direction": "stable",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "mixed",
+      "risk_level": "low",
+      "direction": "none",
+      "headline": "",
+      "tips": [],
+      "produced_any_output": false,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "poor",
+      "risk_level": "low",
+      "direction": "increasing",
+      "headline": "Your risk is still low but this check-in is higher than your recent average.",
+      "tips": [
+        "This check-in is higher than your recent average so you might want to take it easier.",
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": true,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "poor",
+      "risk_level": "low",
+      "direction": "decreasing",
+      "headline": "Your check-in looks okay but your meal might not be supporting your training.",
+      "tips": [
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "poor",
+      "risk_level": "low",
+      "direction": "stable",
+      "headline": "Your check-in looks okay but your meal might not be supporting your training.",
+      "tips": [
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    },
+    {
+      "emotion_label": "neutral",
+      "nutrition_category": "poor",
+      "risk_level": "low",
+      "direction": "none",
+      "headline": "Your check-in looks okay but your meal might not be supporting your training.",
+      "tips": [
+        "Consider adding carbohydrates for recovery, protein for muscle repair and vegetables for vitamins and minerals."
+      ],
+      "produced_any_output": true,
+      "mentions_the_increase": false,
+      "mentions_the_decrease": false,
+      "expected_output_given": true
+    }
+  ],
+  "repeat_signal_cases": [
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "prev_emotional_signals": [
+        "burnout",
+        "neutral",
+        "burnout"
+      ],
+      "expected_repeat_advice": true,
+      "repeat_advice_present": true,
+      "passed": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "prev_emotional_signals": [
+        "burnout",
+        "neutral",
+        "fatigue"
+      ],
+      "expected_repeat_advice": false,
+      "repeat_advice_present": false,
+      "passed": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "prev_emotional_signals": [
+        "burnout",
+        "neutral",
+        "burnout"
+      ],
+      "expected_repeat_advice": true,
+      "repeat_advice_present": true,
+      "passed": true
+    },
+    {
+      "emotion_label": "burnout",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "prev_emotional_signals": [
+        "burnout",
+        "neutral",
+        "fatigue"
+      ],
+      "expected_repeat_advice": false,
+      "repeat_advice_present": false,
+      "passed": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "prev_emotional_signals": [
+        "low motivation",
+        "neutral",
+        "low motivation"
+      ],
+      "expected_repeat_advice": true,
+      "repeat_advice_present": true,
+      "passed": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "mixed",
+      "risk_level": "high",
+      "prev_emotional_signals": [
+        "low motivation",
+        "neutral",
+        "fatigue"
+      ],
+      "expected_repeat_advice": false,
+      "repeat_advice_present": false,
+      "passed": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "prev_emotional_signals": [
+        "low motivation",
+        "neutral",
+        "low motivation"
+      ],
+      "expected_repeat_advice": true,
+      "repeat_advice_present": true,
+      "passed": true
+    },
+    {
+      "emotion_label": "low motivation",
+      "nutrition_category": "poor",
+      "risk_level": "high",
+      "prev_emotional_signals": [
+        "low motivation",
+        "neutral",
+        "fatigue"
+      ],
+      "expected_repeat_advice": false,
+      "repeat_advice_present": false,
+      "passed": true
+    }
+  ]
+}

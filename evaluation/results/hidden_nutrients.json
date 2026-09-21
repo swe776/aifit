@@ -1,0 +1,13 @@
+{
+  "evaluation": "How much of the reference band is not in the photograph?",
+  "meals": 1477,
+  "meals_that_change_band": 711,
+  "meals_that_change_band_percent": 48.14,
+  "where_they_move": {
+    "mixed to mixed": 754,
+    "poor to balanced": 37,
+    "poor to mixed": 622,
+    "mixed to balanced": 52,
+    "balanced to balanced": 12
+  }
+}

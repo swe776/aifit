@@ -1,0 +1,6 @@
+case_id,ratings,agreed_label,rule
+B3P2-C11,"{'rater_1': 'medium', 'rater_2': 'medium', 'rater_3': 'high'}",medium,majority vote
+B3P2-C14,"{'rater_1': 'medium', 'rater_2': 'high', 'rater_3': 'high'}",high,majority vote
+B3P2-C22,"{'rater_1': 'low', 'rater_2': 'low', 'rater_3': 'medium'}",low,majority vote
+B3P2-C33,"{'rater_1': 'medium', 'rater_2': 'medium', 'rater_3': 'low'}",medium,majority vote
+B3P2-C34,"{'rater_1': 'medium', 'rater_2': 'low', 'rater_3': 'low'}",low,majority vote

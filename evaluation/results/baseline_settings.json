@@ -1,0 +1,462 @@
+{
+  "evaluation": "AI.FIT personal baseline settings evaluation",
+  "random_seed": 42,
+  "histories_per_type": 400,
+  "random_variation": 0.6,
+  "change_per_checkin": [
+    0.6,
+    1.0
+  ],
+  "stable_start_range": [
+    3.5,
+    7.0
+  ],
+  "increasing_start_range": [
+    2.5,
+    4.0
+  ],
+  "decreasing_start_range": [
+    6.5,
+    8.0
+  ],
+  "prev_score_counts_tested": [
+    3,
+    5,
+    10
+  ],
+  "change_thresholds_tested": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "app_prev_scores_taken": 10,
+  "app_change_threshold": 1.5,
+  "app_combined_score_percent": 94.56,
+  "best_prev_scores_taken": 10,
+  "best_change_threshold": 1.5,
+  "best_combined_score_percent": 94.56,
+  "every_setting": [
+    {
+      "prev_scores_taken": 3,
+      "change_threshold": 0.5,
+      "used_by_app": false,
+      "changes_caught_percent": 8.38,
+      "false_change_percent": 48.75,
+      "combined_score_percent": 29.81,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 30,
+          "decreasing": 0,
+          "stable": 370,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 37,
+          "stable": 363,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 101,
+          "decreasing": 94,
+          "stable": 205,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 3,
+      "change_threshold": 1.0,
+      "used_by_app": false,
+      "changes_caught_percent": 1.12,
+      "false_change_percent": 15.25,
+      "combined_score_percent": 42.94,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 2,
+          "decreasing": 0,
+          "stable": 398,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 7,
+          "stable": 393,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 33,
+          "decreasing": 28,
+          "stable": 339,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 3,
+      "change_threshold": 1.5,
+      "used_by_app": false,
+      "changes_caught_percent": 0.0,
+      "false_change_percent": 3.75,
+      "combined_score_percent": 48.12,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 6,
+          "decreasing": 9,
+          "stable": 385,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 3,
+      "change_threshold": 2.0,
+      "used_by_app": false,
+      "changes_caught_percent": 0.0,
+      "false_change_percent": 0.25,
+      "combined_score_percent": 49.88,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 1,
+          "decreasing": 0,
+          "stable": 399,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 3,
+      "change_threshold": 2.5,
+      "used_by_app": false,
+      "changes_caught_percent": 0.0,
+      "false_change_percent": 0.0,
+      "combined_score_percent": 50.0,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 5,
+      "change_threshold": 0.5,
+      "used_by_app": false,
+      "changes_caught_percent": 36.5,
+      "false_change_percent": 47.5,
+      "combined_score_percent": 44.5,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 136,
+          "decreasing": 0,
+          "stable": 264,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 156,
+          "stable": 244,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 108,
+          "decreasing": 82,
+          "stable": 210,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 5,
+      "change_threshold": 1.0,
+      "used_by_app": false,
+      "changes_caught_percent": 10.0,
+      "false_change_percent": 13.75,
+      "combined_score_percent": 48.12,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 36,
+          "decreasing": 0,
+          "stable": 364,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 44,
+          "stable": 356,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 31,
+          "decreasing": 24,
+          "stable": 345,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 5,
+      "change_threshold": 1.5,
+      "used_by_app": false,
+      "changes_caught_percent": 1.38,
+      "false_change_percent": 2.0,
+      "combined_score_percent": 49.69,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 4,
+          "decreasing": 0,
+          "stable": 396,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 7,
+          "stable": 393,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 3,
+          "decreasing": 5,
+          "stable": 392,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 5,
+      "change_threshold": 2.0,
+      "used_by_app": false,
+      "changes_caught_percent": 0.0,
+      "false_change_percent": 0.5,
+      "combined_score_percent": 49.75,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 1,
+          "decreasing": 1,
+          "stable": 398,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 5,
+      "change_threshold": 2.5,
+      "used_by_app": false,
+      "changes_caught_percent": 0.0,
+      "false_change_percent": 0.0,
+      "combined_score_percent": 50.0,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 10,
+      "change_threshold": 0.5,
+      "used_by_app": false,
+      "changes_caught_percent": 100.0,
+      "false_change_percent": 46.75,
+      "combined_score_percent": 76.62,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 400,
+          "decreasing": 0,
+          "stable": 0,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 400,
+          "stable": 0,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 100,
+          "decreasing": 87,
+          "stable": 213,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 10,
+      "change_threshold": 1.0,
+      "used_by_app": false,
+      "changes_caught_percent": 100.0,
+      "false_change_percent": 13.0,
+      "combined_score_percent": 93.5,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 400,
+          "decreasing": 0,
+          "stable": 0,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 400,
+          "stable": 0,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 30,
+          "decreasing": 22,
+          "stable": 348,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 10,
+      "change_threshold": 1.5,
+      "used_by_app": true,
+      "changes_caught_percent": 91.12,
+      "false_change_percent": 2.0,
+      "combined_score_percent": 94.56,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 364,
+          "decreasing": 0,
+          "stable": 36,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 365,
+          "stable": 35,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 3,
+          "decreasing": 5,
+          "stable": 392,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 10,
+      "change_threshold": 2.0,
+      "used_by_app": false,
+      "changes_caught_percent": 50.25,
+      "false_change_percent": 0.0,
+      "combined_score_percent": 75.12,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 205,
+          "decreasing": 0,
+          "stable": 195,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 197,
+          "stable": 203,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        }
+      }
+    },
+    {
+      "prev_scores_taken": 10,
+      "change_threshold": 2.5,
+      "used_by_app": false,
+      "changes_caught_percent": 14.0,
+      "false_change_percent": 0.0,
+      "combined_score_percent": 57.0,
+      "what_the_app_said": {
+        "increasing": {
+          "increasing": 53,
+          "decreasing": 0,
+          "stable": 347,
+          "insufficient": 0
+        },
+        "decreasing": {
+          "increasing": 0,
+          "decreasing": 59,
+          "stable": 341,
+          "insufficient": 0
+        },
+        "stable": {
+          "increasing": 0,
+          "decreasing": 0,
+          "stable": 400,
+          "insufficient": 0
+        }
+      }
+    }
+  ]
+}

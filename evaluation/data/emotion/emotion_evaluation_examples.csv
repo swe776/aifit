@@ -1,0 +1,301 @@
+﻿example_id,text,reference_label,context
+AIFIT-EMO-001,i keep waiting for inspiration instead of actually beginning,low motivation,general
+AIFIT-EMO-002,i feel excited to see where this effort leads,high motivation,general
+AIFIT-EMO-003,i keep meeting deadlines but i dont feel any sense of relief or achievement anymore,burnout,general
+AIFIT-EMO-004,ive started questioning whether i even want to continue with this routine,low motivation,fitness
+AIFIT-EMO-005,even when i get time off my mind still feels completely overloaded,burnout,general
+AIFIT-EMO-006,my next workout is an upper body session,neutral,fitness
+AIFIT-EMO-007,i am ready to try the heavier weight ive been working towards,high motivation,fitness
+AIFIT-EMO-008,im still up for training but im really tired today so i might take it easy,fatigue,fitness
+AIFIT-EMO-009,ive pushed past my limits too many times and now i feel mentally finished,burnout,fitness
+AIFIT-EMO-010,todays work feels meaningful and i want to give it proper attention,high motivation,general
+AIFIT-EMO-011,i used to care about beating my numbers but now i barely care how the session goes,burnout,fitness
+AIFIT-EMO-012,i need to return a book to the library this week,neutral,general
+AIFIT-EMO-013,i could finish this quickly if i tried but i cant be bothered,low motivation,general
+AIFIT-EMO-014,even if it takes a while i want to keep trying until i understand it,high motivation,general
+AIFIT-EMO-015,i feel positive about my progress and ready for the next step,high motivation,fitness
+AIFIT-EMO-016,i am going to the supermarket after this call,neutral,general
+AIFIT-EMO-017,i am deciding what to cook for dinner,neutral,general
+AIFIT-EMO-018,ive been under pressure for so long that even simple decisions feel like too much,burnout,general
+AIFIT-EMO-019,my body feels heavy even though i still have things i want to do,fatigue,general
+AIFIT-EMO-020,i need a quiet evening because i have been on my feet all day,fatigue,general
+AIFIT-EMO-021,my gym session is booked for 6 this evening,neutral,fitness
+AIFIT-EMO-022,training used to clear my head but lately it just feels like another thing i have to survive,burnout,fitness
+AIFIT-EMO-023,i have been waiting for this opportunity and i am ready to take it,high motivation,general
+AIFIT-EMO-024,i arrived at the gym just after 8 this morning,neutral,fitness
+AIFIT-EMO-025,i ran out of energy halfway through the workout even though i wanted to continue,fatigue,fitness
+AIFIT-EMO-026,i want to move today but i feel like i could fall asleep at any moment,fatigue,fitness
+AIFIT-EMO-027,i packed my shoes and water bottle before leaving the house,neutral,fitness
+AIFIT-EMO-028,i want to beat my previous time and i am prepared to work for it,high motivation,fitness
+AIFIT-EMO-029,i could easily fit in a short session but i dont feel interested,low motivation,fitness
+AIFIT-EMO-030,ive been trying to improve nonstop and now i feel like ive got nothing left,burnout,fitness
+AIFIT-EMO-031,i am waiting for the bus outside the station,neutral,general
+AIFIT-EMO-032,i started warming up and could already feel how tired i was,fatigue,fitness
+AIFIT-EMO-033,i feel prepared for todays workout and keen to give it my best,high motivation,fitness
+AIFIT-EMO-034,ive been saying yes to everything for too long and now every small task feels overwhelming,burnout,general
+AIFIT-EMO-035,the last result encouraged me to keep practising,high motivation,general
+AIFIT-EMO-036,ive set a new goal and im ready to start working towards it,high motivation,fitness
+AIFIT-EMO-037,i changed the order of 2 exercises in todays plan,neutral,fitness
+AIFIT-EMO-038,i am not stressed or tired i just do not want to deal with it,low motivation,general
+AIFIT-EMO-039,i dont feel excited about any of the plans i made for this week,low motivation,general
+AIFIT-EMO-040,lately i feel numb whenever someone asks me to take on something else,burnout,general
+AIFIT-EMO-041,i completed 3 sets before moving to the next exercise,neutral,fitness
+AIFIT-EMO-042,today is a rest day so my next session will be tomorrow,neutral,fitness
+AIFIT-EMO-043,i need to buy groceries before the shop closes,neutral,general
+AIFIT-EMO-044,the session is not even difficult but i still dont feel like beginning,low motivation,fitness
+AIFIT-EMO-045,i completed the workout that was written in my plan,neutral,fitness
+AIFIT-EMO-046,i used to enjoy this project but lately i have lost interest in it,low motivation,general
+AIFIT-EMO-047,i trained at home because the gym was closed,neutral,fitness
+AIFIT-EMO-048,i can focus for a few minutes before the tiredness catches up with me,fatigue,general
+AIFIT-EMO-049,i feel focused today and i know exactly what i want from the session,high motivation,fitness
+AIFIT-EMO-050,ive been carrying too much for too long and even small requests feel impossible,burnout,general
+AIFIT-EMO-051,every workout feels heavier because ive been under pressure to keep progressing for so long,burnout,fitness
+AIFIT-EMO-052,i put my gym clothes in the wash after training,neutral,fitness
+AIFIT-EMO-053,missing 1 session makes me panic so i keep pushing even though im mentally exhausted,burnout,fitness
+AIFIT-EMO-054,i want to stay consistent and keep building on what i learned,high motivation,general
+AIFIT-EMO-055,ive been sitting at my desk for an hour without doing any work,low motivation,general
+AIFIT-EMO-056,i planned a hard session but my energy has dropped after a long shift,fatigue,fitness
+AIFIT-EMO-057,i keep rereading the same sentence because i am so sleepy,fatigue,general
+AIFIT-EMO-058,my plans are clear but i have no desire to follow them today,low motivation,general
+AIFIT-EMO-059,i moved my appointment from monday to tuesday,neutral,general
+AIFIT-EMO-060,i have a clear target for this month and im ready to work for it,high motivation,fitness
+AIFIT-EMO-061,i feel positive about the challenge and ready to give it a try,high motivation,general
+AIFIT-EMO-062,i have a workout planned for later after i finish dinner,neutral,fitness
+AIFIT-EMO-063,i keep finishing 1 problem only for 3 more to appear and im tired of carrying it all,burnout,general
+AIFIT-EMO-064,i am checking what time the gym closes tonight,neutral,fitness
+AIFIT-EMO-065,i want to use the time well and make some real progress today,high motivation,general
+AIFIT-EMO-066,i have a goal in mind and i am willing to work steadily towards it,high motivation,general
+AIFIT-EMO-067,i feel prepared to deal with any problems that come up,high motivation,general
+AIFIT-EMO-068,i only slept a few hours so i am going to use lighter weights,fatigue,fitness
+AIFIT-EMO-069,i could train this evening but id rather keep putting it off,low motivation,fitness
+AIFIT-EMO-070,i am excited to return to the gym after my rest day,high motivation,fitness
+AIFIT-EMO-071,ive been trying to keep everyone happy and it has left me completely drained,burnout,general
+AIFIT-EMO-072,my mind is ready for the workout but my body feels slow and heavy,fatigue,fitness
+AIFIT-EMO-073,i finished work and made dinner when i got home,neutral,general
+AIFIT-EMO-074,i have a meeting at 10 and another 1 after lunch,neutral,general
+AIFIT-EMO-075,i am ready to put in the effort because the result matters to me,high motivation,general
+AIFIT-EMO-076,the gym used to be something i enjoyed but now it feels like another responsibility,burnout,fitness
+AIFIT-EMO-077,i made it to the gym but i dont have enough energy for a full session,fatigue,fitness
+AIFIT-EMO-078,the deadline is coming but i still dont feel any urgency to work,low motivation,general
+AIFIT-EMO-079,i made coffee and opened my laptop at the desk,neutral,general
+AIFIT-EMO-080,i want to keep working but i think i need a short nap first,fatigue,general
+AIFIT-EMO-081,i am choosing between a morning or evening session tomorrow,neutral,fitness
+AIFIT-EMO-082,i want to finish my tasks but i feel too tired to focus properly,fatigue,general
+AIFIT-EMO-083,i only got a few hours of sleep and everything feels harder today,fatigue,general
+AIFIT-EMO-084,i feel confident about the plan and keen to follow through,high motivation,general
+AIFIT-EMO-085,i am trying to stay consistent but i do not have much physical energy right now,fatigue,fitness
+AIFIT-EMO-086,i have a clear plan for today and im ready to get started,high motivation,general
+AIFIT-EMO-087,ive been handling so many things at once that i dont have anything left to give,burnout,general
+AIFIT-EMO-088,i charged my phone before going out,neutral,general
+AIFIT-EMO-089,i changed the date on my calendar,neutral,general
+AIFIT-EMO-090,ive skipped a few sessions because i just dont feel driven to continue,low motivation,fitness
+AIFIT-EMO-091,i feel tired enough that even making dinner seems harder than usual,fatigue,general
+AIFIT-EMO-092,the class lasts 1 hour and begins at 7,neutral,fitness
+AIFIT-EMO-093,ive made up my mind to stay consistent this week,high motivation,fitness
+AIFIT-EMO-094,training feels optional lately and i keep choosing not to do it,low motivation,fitness
+AIFIT-EMO-095,ive spent so long trying to stay productive that i barely feel present anymore,burnout,general
+AIFIT-EMO-096,i think i can manage a walk but i am too tired for anything intense,fatigue,fitness
+AIFIT-EMO-097,i keep putting off a simple task even though i have plenty of time,low motivation,general
+AIFIT-EMO-098,i went to the gym this morning and followed my usual routine,neutral,fitness
+AIFIT-EMO-099,i keep waiting for the right mood before i do any exercise,low motivation,fitness
+AIFIT-EMO-100,i had an early start and now i feel ready to fall asleep,fatigue,general
+AIFIT-EMO-101,i have enough energy but i would rather avoid everything on my list,low motivation,general
+AIFIT-EMO-102,ive made good progress and i want to keep the momentum going,high motivation,general
+AIFIT-EMO-103,ive been looking forward to working on this all week,high motivation,general
+AIFIT-EMO-104,ive got a lot of energy and im ready for a strong session,high motivation,fitness
+AIFIT-EMO-105,i know consistency matters but i cant get myself to care today,low motivation,fitness
+AIFIT-EMO-106,i wanted a longer session but my body is asking for an early night,fatigue,fitness
+AIFIT-EMO-107,i used to care about doing well but lately im just trying to make it through the day,burnout,general
+AIFIT-EMO-108,i havent let myself slow down in weeks and now i feel completely over it,burnout,fitness
+AIFIT-EMO-109,i want the results but right now i dont feel like doing the work,low motivation,fitness
+AIFIT-EMO-110,i have time to train today but i honestly dont feel like going,low motivation,fitness
+AIFIT-EMO-111,i keep watching workout videos without actually getting up to train,low motivation,fitness
+AIFIT-EMO-112,todays workout matters to me but i dont think my body can handle much,fatigue,fitness
+AIFIT-EMO-113,i feel focused and prepared to finish what i started,high motivation,general
+AIFIT-EMO-114,ive been seeing progress and it makes me want to keep showing up,high motivation,fitness
+AIFIT-EMO-115,i am interested in what im doing but my mind feels slow from lack of sleep,fatigue,general
+AIFIT-EMO-116,i checked the weather before leaving the house,neutral,general
+AIFIT-EMO-117,todays goal is small but i am determined to complete it,high motivation,fitness
+AIFIT-EMO-118,i have been choosing the easiest option because i dont feel like putting in effort,low motivation,general
+AIFIT-EMO-119,i am excited to begin because this is something i genuinely care about,high motivation,general
+AIFIT-EMO-120,i brought a different pair of shoes for todays workout,neutral,fitness
+AIFIT-EMO-121,i want to finish my session but my energy is much lower than usual,fatigue,fitness
+AIFIT-EMO-122,ive been balancing training with everything else and it is all starting to catch up with me,burnout,fitness
+AIFIT-EMO-123,i barely slept last night and my body feels heavy this morning,fatigue,fitness
+AIFIT-EMO-124,i keep telling myself ill restart tomorrow instead of doing something today,low motivation,fitness
+AIFIT-EMO-125,i put the clean clothes away after dinner,neutral,general
+AIFIT-EMO-126,work has been nonstop for weeks and i feel like ive finally reached my limit,burnout,general
+AIFIT-EMO-127,im still showing up but honestly im just going through the motions now,burnout,fitness
+AIFIT-EMO-128,nothing is really stopping me from working out i just cant be bothered,low motivation,fitness
+AIFIT-EMO-129,i keep shortening my workouts because i dont feel like staying,low motivation,fitness
+AIFIT-EMO-130,i am still in a decent mood i just really need some sleep,fatigue,general
+AIFIT-EMO-131,i am proud of what ive done so far and want to keep improving,high motivation,general
+AIFIT-EMO-132,even after a rest day i still feel mentally done with the whole routine,burnout,fitness
+AIFIT-EMO-133,i watered the plants before sitting down to work,neutral,general
+AIFIT-EMO-134,my goals still matter to me but i dont feel like working on them today,low motivation,fitness
+AIFIT-EMO-135,my rest day falls between the 2 longer sessions,neutral,fitness
+AIFIT-EMO-136,i wrote down the weights i used during the session,neutral,fitness
+AIFIT-EMO-137,i trained for about 40 minutes and then went home,neutral,fitness
+AIFIT-EMO-138,i keep opening my laptop and then finding something else to do,low motivation,general
+AIFIT-EMO-139,i am finding it hard to think clearly after such a long day,fatigue,general
+AIFIT-EMO-140,i feel like im always switched on and i dont know how much longer i can manage it,burnout,general
+AIFIT-EMO-141,i used the treadmill for 20 minutes after lifting,neutral,fitness
+AIFIT-EMO-142,i packed my gym bag this morning and still decided not to go,low motivation,fitness
+AIFIT-EMO-143,the constant need to improve has taken all the enjoyment out of my workouts,burnout,fitness
+AIFIT-EMO-144,i tried to train normally but i felt worn out much earlier than usual,fatigue,fitness
+AIFIT-EMO-145,even things i normally enjoy feel like more responsibilities now,burnout,general
+AIFIT-EMO-146,i had a long day and now i have very little energy left for the gym,fatigue,fitness
+AIFIT-EMO-147,todays plan has 3 exercises followed by a short walk,neutral,fitness
+AIFIT-EMO-148,ive been pushing through every session for weeks and now even warming up feels like too much,burnout,fitness
+AIFIT-EMO-149,i am ready to focus and get through the plan 1 step at a time,high motivation,general
+AIFIT-EMO-150,my plans have not changed but i might need to sleep before continuing,fatigue,general
+AIFIT-EMO-151,i finished the 1st task and started the 2nd one,neutral,general
+AIFIT-EMO-152,i have enough energy for a workout but no real desire to do one,low motivation,fitness
+AIFIT-EMO-153,i have decided what i want and i am ready to work towards it,high motivation,general
+AIFIT-EMO-154,i havent lost energy i have just lost the desire to keep following the plan,low motivation,fitness
+AIFIT-EMO-155,i planned a morning session because i want to start the day well,high motivation,fitness
+AIFIT-EMO-156,even if todays session is difficult im determined to finish it,high motivation,fitness
+AIFIT-EMO-157,i cant remember the last time training felt refreshing instead of like another demand,burnout,fitness
+AIFIT-EMO-158,i keep forcing myself to follow the plan even though i feel completely worn down,burnout,fitness
+AIFIT-EMO-159,my body feels sluggish this morning so i will keep the workout light,fatigue,fitness
+AIFIT-EMO-160,i know what workout i need to do but i have no interest in starting,low motivation,fitness
+AIFIT-EMO-161,i have 1 more session scheduled before the weekend,neutral,fitness
+AIFIT-EMO-162,i made a list of the items i need from the shop,neutral,general
+AIFIT-EMO-163,i want to be productive but i can feel myself slowing down,fatigue,general
+AIFIT-EMO-164,my class starts at 2 and finishes at 4,neutral,general
+AIFIT-EMO-165,i keep saying later even though there is no real reason to wait,low motivation,general
+AIFIT-EMO-166,i feel ready to get back into my routine and take it seriously,high motivation,fitness
+AIFIT-EMO-167,today has been long and i have almost no energy left,fatigue,general
+AIFIT-EMO-168,ive stopped caring whether i finish the small goals i set for myself,low motivation,general
+AIFIT-EMO-169,i keep my training plan in a note on my phone,neutral,fitness
+AIFIT-EMO-170,i still care about finishing this but i am running low on energy,fatigue,general
+AIFIT-EMO-171,i wake up already dreading the list of things i have to deal with,burnout,general
+AIFIT-EMO-172,ive been doing everything according to plan but i still feel worn down and disconnected,burnout,fitness
+AIFIT-EMO-173,i have 1 appointment in the morning and none in the afternoon,neutral,general
+AIFIT-EMO-174,ive been putting pressure on myself every day and i can tell im reaching my limit,burnout,fitness
+AIFIT-EMO-175,my muscles feel fine but i am struggling to stay awake,fatigue,fitness
+AIFIT-EMO-176,i am keen to keep my routine going but i need more sleep first,fatigue,fitness
+AIFIT-EMO-177,i feel like challenging myself a little more at the gym today,high motivation,fitness
+AIFIT-EMO-178,im excited about this project and i want to see how far i can take it,high motivation,general
+AIFIT-EMO-179,nothing is particularly difficult today i just cannot get myself moving,low motivation,general
+AIFIT-EMO-180,ive decided to improve my form and im excited to practise it,high motivation,fitness
+AIFIT-EMO-181,i had a good session yesterday and i want to keep the progress going,high motivation,fitness
+AIFIT-EMO-182,i know i will regret delaying this but i am still avoiding it,low motivation,general
+AIFIT-EMO-183,i still want to exercise but i feel drained after being awake all night,fatigue,fitness
+AIFIT-EMO-184,im proud of how consistent ive been and i want to continue,high motivation,fitness
+AIFIT-EMO-185,i have been yawning all afternoon but i still want to do something active,fatigue,fitness
+AIFIT-EMO-186,i still feel positive about my plan but i am too tired to perform well today,fatigue,fitness
+AIFIT-EMO-187,my session starts with a warm up and ends with stretching,neutral,fitness
+AIFIT-EMO-188,i feel like ive been running on empty for weeks without getting a proper chance to recover,burnout,general
+AIFIT-EMO-189,i am not especially tired i just dont want to work out today,low motivation,fitness
+AIFIT-EMO-190,every day has felt demanding lately and im starting to feel detached from everything,burnout,general
+AIFIT-EMO-191,lately it takes a lot of convincing just to begin basic tasks,low motivation,general
+AIFIT-EMO-192,i need to finish 1 more thing but my brain feels too sleepy,fatigue,general
+AIFIT-EMO-193,i have 2 chapters left to read this week,neutral,general
+AIFIT-EMO-194,i still want to exercise so i might do a shorter session today,fatigue,fitness
+AIFIT-EMO-195,i have been awake since very early and now i can barely concentrate,fatigue,general
+AIFIT-EMO-196,even if i struggle with a few sets i am going to keep trying,high motivation,fitness
+AIFIT-EMO-197,i am keen to finish the workout i planned instead of cutting it short,high motivation,fitness
+AIFIT-EMO-198,my programme changes at the beginning of next month,neutral,fitness
+AIFIT-EMO-199,i am going to rest tonight because i can barely keep my eyes open,fatigue,fitness
+AIFIT-EMO-200,i used to take pride in my work but now i just want the day to end,burnout,general
+AIFIT-EMO-201,i have an online class later this evening,neutral,general
+AIFIT-EMO-202,i am working from home today and going to the office tomorrow,neutral,general
+AIFIT-EMO-203,ive spent most of the day scrolling instead of starting my work,low motivation,general
+AIFIT-EMO-204,ive been making excuses even though i know i have time,low motivation,fitness
+AIFIT-EMO-205,ive spent weeks trying not to fall behind and i cant keep this pace much longer,burnout,fitness
+AIFIT-EMO-206,i usually train on monday wednesday and friday,neutral,fitness
+AIFIT-EMO-207,ive ignored needing a proper break for too long and now every session feels overwhelming,burnout,fitness
+AIFIT-EMO-208,i want to stay consistent because i can see my effort paying off,high motivation,fitness
+AIFIT-EMO-209,im looking forward to seeing what i can achieve this week,high motivation,fitness
+AIFIT-EMO-210,ive had plenty of rest but i still have no urge to start,low motivation,fitness
+AIFIT-EMO-211,my energy suddenly dropped this afternoon and i have been moving slowly since,fatigue,general
+AIFIT-EMO-212,no matter how much i finish i still feel behind and it is wearing me down,burnout,general
+AIFIT-EMO-213,i wrote down the tasks i need to complete today,neutral,general
+AIFIT-EMO-214,i recorded the length of my walk after lunch,neutral,fitness
+AIFIT-EMO-215,i would like to go out tonight but i am too tired after the day ive had,fatigue,general
+AIFIT-EMO-216,lately i keep choosing anything else over going to the gym,low motivation,fitness
+AIFIT-EMO-217,i finished work and im deciding whether to train this evening,neutral,fitness
+AIFIT-EMO-218,no one is stopping me i just dont feel like putting in the effort,low motivation,general
+AIFIT-EMO-219,ive got a good feeling about today and im ready to begin,high motivation,general
+AIFIT-EMO-220,i keep planning a session then finding another reason to delay it,low motivation,fitness
+AIFIT-EMO-221,ive planned my session and i cant wait to get started,high motivation,fitness
+AIFIT-EMO-222,my workout felt harder today because i did not rest properly last night,fatigue,fitness
+AIFIT-EMO-223,i dont think 1 good night of sleep will fix how worn down ive been feeling,burnout,general
+AIFIT-EMO-224,i know this will not be easy but i still want to take it on,high motivation,general
+AIFIT-EMO-225,i woke up tired and have been yawning since breakfast,fatigue,general
+AIFIT-EMO-226,lately i finish each session feeling empty instead of accomplished,burnout,fitness
+AIFIT-EMO-227,i am not upset about anything i just did not get enough rest,fatigue,general
+AIFIT-EMO-228,i took the train into town this morning,neutral,general
+AIFIT-EMO-229,i did not rest enough and now i am feeling it,fatigue,general
+AIFIT-EMO-230,i opened my training plan and closed it again without doing anything,low motivation,fitness
+AIFIT-EMO-231,i feel physically tired but i am still interested in what we are doing,fatigue,general
+AIFIT-EMO-232,the pressure has been building for a while and now i feel completely worn down,burnout,general
+AIFIT-EMO-233,i have things i could get done today but i dont feel like starting any of them,low motivation,general
+AIFIT-EMO-234,i know the work matters but right now i dont feel driven to do it,low motivation,general
+AIFIT-EMO-235,weekends dont feel restful anymore because im always thinking about what comes next,burnout,general
+AIFIT-EMO-236,ive made a list but i have no interest in working through it,low motivation,general
+AIFIT-EMO-237,i know it will take effort but i am determined to finish it,high motivation,general
+AIFIT-EMO-238,i am trying to listen but my eyes keep closing on their own,fatigue,general
+AIFIT-EMO-239,i could make progress today but i would rather leave it alone,low motivation,general
+AIFIT-EMO-240,i saved the file in the project folder,neutral,general
+AIFIT-EMO-241,ive been delaying this assignment because i just dont want to begin,low motivation,general
+AIFIT-EMO-242,ive kept training through stress for weeks and i dont feel like myself anymore,burnout,fitness
+AIFIT-EMO-243,ive organised everything i need and i am ready to begin,high motivation,general
+AIFIT-EMO-244,ive been trying to stay strong for everyone and now i feel like i have hit a wall,burnout,general
+AIFIT-EMO-245,i woke up feeling ready to make the most of the day,high motivation,general
+AIFIT-EMO-246,my routine has become something i dread but i keep doing it because i feel like i have to,burnout,fitness
+AIFIT-EMO-247,ive stopped looking forward to training and now i keep avoiding it,low motivation,fitness
+AIFIT-EMO-248,i have been waiting for training day and im ready to begin,high motivation,fitness
+AIFIT-EMO-249,i keep acting like i can handle everything but inside i feel completely spent,burnout,general
+AIFIT-EMO-250,i still want to join everyone later if i have enough energy,fatigue,general
+AIFIT-EMO-251,i keep telling myself to push harder but part of me has completely checked out,burnout,fitness
+AIFIT-EMO-252,ive been focused on results for so long that training doesnt feel enjoyable anymore,burnout,fitness
+AIFIT-EMO-253,feeling good today and actually looking forward to my workout,high motivation,fitness
+AIFIT-EMO-254,i took the bus to the gym and walked home afterward,neutral,fitness
+AIFIT-EMO-255,i feel unusually sleepy today so recovery probably makes more sense,fatigue,fitness
+AIFIT-EMO-256,i woke up ready to get moving and make this workout count,high motivation,fitness
+AIFIT-EMO-257,i slept badly and now i am struggling to keep my eyes open at work,fatigue,general
+AIFIT-EMO-258,i have kept pushing through work and study but now i feel mentally checked out,burnout,general
+AIFIT-EMO-259,i want to make the most of todays session and stay focused,high motivation,fitness
+AIFIT-EMO-260,my gym clothes are ready but i still dont want to leave the house,low motivation,fitness
+AIFIT-EMO-261,i am keen to take the next step instead of waiting any longer,high motivation,general
+AIFIT-EMO-262,trying to manage workouts meals and everything else has started to feel unbearable,burnout,fitness
+AIFIT-EMO-263,i am still interested in training but physically i feel completely tired,fatigue,fitness
+AIFIT-EMO-264,i want to keep going but my body needs a break right now,fatigue,general
+AIFIT-EMO-265,im excited to train today and see if i can improve from last week,high motivation,fitness
+AIFIT-EMO-266,ive had no real space to breathe and it is starting to affect everything i do,burnout,general
+AIFIT-EMO-267,i feel confident that i can complete the full workout today,high motivation,fitness
+AIFIT-EMO-268,i am meeting a friend after work tomorrow,neutral,general
+AIFIT-EMO-269,i checked the timetable before planning my journey,neutral,general
+AIFIT-EMO-270,i could probably continue but i would not do my best in this state,fatigue,general
+AIFIT-EMO-271,i keep moving tasks to tomorrow without even attempting them,low motivation,general
+AIFIT-EMO-272,there is nothing wrong with my body i just dont want to train,low motivation,fitness
+AIFIT-EMO-273,i replied to the email and saved the document,neutral,general
+AIFIT-EMO-274,i am trying to stay awake long enough to finish this last task,fatigue,general
+AIFIT-EMO-275,i printed the form and placed it in my bag,neutral,general
+AIFIT-EMO-276,i planned to exercise after lunch but i keep pushing it later,low motivation,fitness
+AIFIT-EMO-277,ive had no proper break from training and im starting to dread every session,burnout,fitness
+AIFIT-EMO-278,i am not avoiding the gym i just need some sleep before i go,fatigue,fitness
+AIFIT-EMO-279,i am looking forward to seeing what i can accomplish,high motivation,general
+AIFIT-EMO-280,the idea sounded good yesterday but today i have no interest in it,low motivation,general
+AIFIT-EMO-281,i feel ready to take on something challenging today,high motivation,general
+AIFIT-EMO-282,i woke up at 7 and left the house at 8,neutral,general
+AIFIT-EMO-283,i know what needs to be done i just dont feel like doing it,low motivation,general
+AIFIT-EMO-284,i dont feel excited about progress anymore i just feel pressured to continue,burnout,fitness
+AIFIT-EMO-285,i did the same number of exercises as last week,neutral,fitness
+AIFIT-EMO-286,i have been avoiding things i normally choose to do,low motivation,general
+AIFIT-EMO-287,i have everything i need to start but i still dont feel ready to bother,low motivation,general
+AIFIT-EMO-288,ive lost the sense that any of this effort is leading somewhere,burnout,general
+AIFIT-EMO-289,even simple workouts feel like too much after trying to stay consistent through all this stress,burnout,fitness
+AIFIT-EMO-290,i feel guilty whenever i rest so ive kept going until i have nearly nothing left,burnout,fitness
+AIFIT-EMO-291,i am looking forward to learning something new this afternoon,high motivation,general
+AIFIT-EMO-292,ive been coping with constant demands for months and i cant keep pretending im fine,burnout,general
+AIFIT-EMO-293,i had lunch at around 1 this afternoon,neutral,general
+AIFIT-EMO-294,i am getting things done but it feels like im doing it on autopilot,burnout,general
+AIFIT-EMO-295,ive been sitting around waiting to feel ready but it isnt happening,low motivation,fitness
+AIFIT-EMO-296,i keep thinking about starting but never make the first move,low motivation,general
+AIFIT-EMO-297,i was looking forward to training but i keep yawning between every set,fatigue,fitness
+AIFIT-EMO-298,i want to train but even climbing the stairs felt tiring today,fatigue,fitness
+AIFIT-EMO-299,after months of sticking to the plan i feel more drained than proud,burnout,fitness
+AIFIT-EMO-300,ive reached the point where i dont care about doing things well i just want them over,burnout,general

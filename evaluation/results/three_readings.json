@@ -1,0 +1,32 @@
+{
+  "evaluation": "Does showing three food readings do better than one?",
+  "photographs": 184,
+  "each_reading": {
+    "Food-101 dish": {
+      "food_recognised": 85,
+      "correct_band": 92,
+      "food_recognised_percent": 46.2,
+      "correct_band_percent": 50.0
+    },
+    "Food-group classifier": {
+      "food_recognised": 90,
+      "correct_band": 90,
+      "food_recognised_percent": 48.91,
+      "correct_band_percent": 48.91
+    },
+    "BLIP caption": {
+      "food_recognised": 113,
+      "correct_band": 77,
+      "food_recognised_percent": 61.41,
+      "correct_band_percent": 41.85
+    }
+  },
+  "at_least_one_model_recognised_the_food": {
+    "count": 150,
+    "percent": 81.52
+  },
+  "at_least_one_reading_gave_the_right_band": {
+    "count": 136,
+    "percent": 73.91
+  }
+}

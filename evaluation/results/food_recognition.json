@@ -1,0 +1,68 @@
+{
+  "evaluation": "Can each food model name a food that is on the plate?",
+  "configurations": [
+    {
+      "configuration": "BLIP Large",
+      "checkpoint": "Salesforce/blip-image-captioning-large",
+      "kind": "caption",
+      "photographs": 184,
+      "recognised": 113,
+      "recognised_percent": 61.41,
+      "seconds_per_photograph": 5.7666
+    },
+    {
+      "configuration": "Kaludi Food Categories 12",
+      "checkpoint": "Kaludi/food-category-classification-v2.0",
+      "kind": "classifier",
+      "photographs": 184,
+      "recognised": 90,
+      "recognised_percent": 48.91,
+      "seconds_per_photograph": 1.7406
+    },
+    {
+      "configuration": "Food-101 SigLIP2 93M",
+      "checkpoint": "prithivMLmods/Food-101-93M",
+      "kind": "classifier",
+      "photographs": 184,
+      "recognised": 85,
+      "recognised_percent": 46.2,
+      "seconds_per_photograph": 1.5437
+    },
+    {
+      "configuration": "ViT Food-101",
+      "checkpoint": "nateraw/food",
+      "kind": "classifier",
+      "photographs": 184,
+      "recognised": 79,
+      "recognised_percent": 42.93,
+      "seconds_per_photograph": 2.0549
+    },
+    {
+      "configuration": "BLIP Base",
+      "checkpoint": "Salesforce/blip-image-captioning-base",
+      "kind": "caption",
+      "photographs": 184,
+      "recognised": 78,
+      "recognised_percent": 42.39,
+      "seconds_per_photograph": 3.8127
+    },
+    {
+      "configuration": "Swin Food-101",
+      "checkpoint": "aspis/swin-finetuned-food101",
+      "kind": "classifier",
+      "photographs": 184,
+      "recognised": 72,
+      "recognised_percent": 39.13,
+      "seconds_per_photograph": 2.344
+    },
+    {
+      "configuration": "Kaludi Food Categories 11",
+      "checkpoint": "Kaludi/food-category-classification",
+      "kind": "classifier",
+      "photographs": 184,
+      "recognised": 68,
+      "recognised_percent": 36.96,
+      "seconds_per_photograph": 1.6612
+    }
+  ]
+}
