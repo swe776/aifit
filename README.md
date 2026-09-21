@@ -113,9 +113,15 @@ burnout, low motivation, fatigue, high motivation and neutral.
 
 ## Running the application
 
+
+Note: This application was built on Windows System so the
+instructions for macOS or Linux might not be 100% correct.
+
+
 What is needed?
 Python 3.14, Node 20.19 or newer and FFmpeg available on
-PATH (Whisper uses it to read audio).
+PATH (Whisper uses it to read audio). On macOS you can install FFmpeg with
+`brew install ffmpeg`.
 
 **1. Set up.** From the project folder, open visual studio, a new terminal and
 use cmd and type
@@ -126,12 +132,15 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-On macOS or Linux
+On macOS or Linux there is no cmd so use the normal Terminal.
+Type `python3 -m venv .venv` instead of `python -m venv .venv` for the first command
+and activate with `source .venv/bin/activate` instead. Once the environment is
+active `python` works on its own so every later command in this README is the same.
 
-- activate with `source .venv/bin/activate` instead.
 
 `requirements.txt` lists every package with the exact versions the
 application and the evaluations were run with.
+
 
 **2. Add a secret key.** Create a file and name it `.env` and copy
 `.env.example` to `.env` and set `SECRET_KEY` to a long and random value.
