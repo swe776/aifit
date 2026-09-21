@@ -39,9 +39,9 @@ Three models then read it; SigLIP2 names a dish from Food-101, the Kaludi
 food category classifier names one of twelve everyday food groups and BLIP
 Large describes the plate. All three readings are shown and the user taps the
 one that matches their meal or chooses a band themselves. A dish or caption
-reading is looked up in a food lookup table that lists which nutrition groups 
-each food offers and the meal is placed in a band. A food group reading has a 
-band set for each of the twelve groups because it names a category and not 
+reading is looked up in a food lookup table that lists which nutrition groups
+each food offers and the meal is placed in a band. A food group reading has a
+band set for each of the twelve groups because it names a category and not
 the food itself.
 
 A dish or caption reading (SigLIP2, BLIP Large):
