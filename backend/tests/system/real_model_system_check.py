@@ -426,7 +426,7 @@ def main(upload_directory):
         else "low"
     )
     check(
-        "the risk level matches the Appendix B reference grid",
+        "the risk level matches the Appendix A reference grid",
         level == expected,
         f"score {score} gave {level}, expected {expected}",
     )
