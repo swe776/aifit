@@ -1101,7 +1101,7 @@ def draw_appendix_b_advice() -> None:
     rows.append([
         "burnout/low motivation repeated", "High risk",
         REPEAT_SIGNAL_TIP,
-        "Isoard-Gautheur et al. (2016); Sarrazin et al. (2002)",
+        "Isoard-Gautheur, Guillet-Descas and Gustafsson (2016); Sarrazin et al. (2002)",
     ])
 
     draw_table(
