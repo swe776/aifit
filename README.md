@@ -114,14 +114,18 @@ burnout, low motivation, fatigue, high motivation and neutral.
 ## Running the application
 
 
-Note: This application was built on Windows System so the
+Note: This application was built on Windows so the
 instructions for macOS or Linux might not be 100% correct.
 
 
 What is needed?
-Python 3.14, Node 20.19 or newer and FFmpeg available on
+
+- Python 3.14, Node 20.19 or newer and FFmpeg available on
 PATH (Whisper uses it to read audio). On macOS you can install FFmpeg with
-`brew install ffmpeg`.
+`brew install ffmpeg`. On Windows install it with `winget install -e --id Gyan.FFmpeg`
+and on Linux with `sudo apt install ffmpeg`.
+
+- about 6 GB of free disk space for models downloaded and .venv
 
 **1. Set up.** From the project folder, open visual studio, a new terminal and
 use cmd and type
