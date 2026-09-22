@@ -302,7 +302,7 @@ again in that order.
 `python evaluation/make_figures.py` draws the charts and tables in Chapters 4
 and 5 and Appendices A and B into `docs/figures/` from the results files so a
 figure cannot show a different number from the evaluation it came from. It
-reads every results file so run it last. The Chapter 4 code pictures are in `docs/figures/code/`.
+reads every results file so run it last. 
 
 Evaluation measures used;
 
