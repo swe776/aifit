@@ -33,18 +33,18 @@
   ],
   "app_prev_scores_taken": 10,
   "app_change_threshold": 1.5,
-  "app_combined_score_percent": 94.56,
+  "app_combined_score_percent": 94.62,
   "best_prev_scores_taken": 10,
   "best_change_threshold": 1.5,
-  "best_combined_score_percent": 94.56,
+  "best_combined_score_percent": 94.62,
   "every_setting": [
     {
       "prev_scores_taken": 3,
       "change_threshold": 0.5,
       "used_by_app": false,
       "changes_caught_percent": 8.38,
-      "false_change_percent": 48.75,
-      "combined_score_percent": 29.81,
+      "false_change_percent": 49.0,
+      "combined_score_percent": 29.69,
       "what_the_app_said": {
         "increasing": {
           "increasing": 30,
@@ -60,8 +60,8 @@
         },
         "stable": {
           "increasing": 101,
-          "decreasing": 94,
-          "stable": 205,
+          "decreasing": 95,
+          "stable": 204,
           "insufficient": 0
         }
       }
@@ -71,8 +71,8 @@
       "change_threshold": 1.0,
       "used_by_app": false,
       "changes_caught_percent": 1.12,
-      "false_change_percent": 15.25,
-      "combined_score_percent": 42.94,
+      "false_change_percent": 15.75,
+      "combined_score_percent": 42.69,
       "what_the_app_said": {
         "increasing": {
           "increasing": 2,
@@ -87,9 +87,9 @@
           "insufficient": 0
         },
         "stable": {
-          "increasing": 33,
-          "decreasing": 28,
-          "stable": 339,
+          "increasing": 34,
+          "decreasing": 29,
+          "stable": 337,
           "insufficient": 0
         }
       }
@@ -182,26 +182,26 @@
       "prev_scores_taken": 5,
       "change_threshold": 0.5,
       "used_by_app": false,
-      "changes_caught_percent": 36.5,
-      "false_change_percent": 47.5,
-      "combined_score_percent": 44.5,
+      "changes_caught_percent": 37.12,
+      "false_change_percent": 48.0,
+      "combined_score_percent": 44.56,
       "what_the_app_said": {
         "increasing": {
-          "increasing": 136,
+          "increasing": 138,
           "decreasing": 0,
-          "stable": 264,
+          "stable": 262,
           "insufficient": 0
         },
         "decreasing": {
           "increasing": 0,
-          "decreasing": 156,
-          "stable": 244,
+          "decreasing": 159,
+          "stable": 241,
           "insufficient": 0
         },
         "stable": {
           "increasing": 108,
-          "decreasing": 82,
-          "stable": 210,
+          "decreasing": 84,
+          "stable": 208,
           "insufficient": 0
         }
       }
@@ -210,14 +210,14 @@
       "prev_scores_taken": 5,
       "change_threshold": 1.0,
       "used_by_app": false,
-      "changes_caught_percent": 10.0,
+      "changes_caught_percent": 10.12,
       "false_change_percent": 13.75,
-      "combined_score_percent": 48.12,
+      "combined_score_percent": 48.19,
       "what_the_app_said": {
         "increasing": {
-          "increasing": 36,
+          "increasing": 37,
           "decreasing": 0,
-          "stable": 364,
+          "stable": 363,
           "insufficient": 0
         },
         "decreasing": {
@@ -351,8 +351,8 @@
       "change_threshold": 1.0,
       "used_by_app": false,
       "changes_caught_percent": 100.0,
-      "false_change_percent": 13.0,
-      "combined_score_percent": 93.5,
+      "false_change_percent": 13.25,
+      "combined_score_percent": 93.38,
       "what_the_app_said": {
         "increasing": {
           "increasing": 400,
@@ -367,9 +367,9 @@
           "insufficient": 0
         },
         "stable": {
-          "increasing": 30,
+          "increasing": 31,
           "decreasing": 22,
-          "stable": 348,
+          "stable": 347,
           "insufficient": 0
         }
       }
@@ -378,9 +378,9 @@
       "prev_scores_taken": 10,
       "change_threshold": 1.5,
       "used_by_app": true,
-      "changes_caught_percent": 91.12,
+      "changes_caught_percent": 91.25,
       "false_change_percent": 2.0,
-      "combined_score_percent": 94.56,
+      "combined_score_percent": 94.62,
       "what_the_app_said": {
         "increasing": {
           "increasing": 364,
@@ -390,8 +390,8 @@
         },
         "decreasing": {
           "increasing": 0,
-          "decreasing": 365,
-          "stable": 35,
+          "decreasing": 366,
+          "stable": 34,
           "insufficient": 0
         },
         "stable": {
@@ -406,20 +406,20 @@
       "prev_scores_taken": 10,
       "change_threshold": 2.0,
       "used_by_app": false,
-      "changes_caught_percent": 50.25,
+      "changes_caught_percent": 50.5,
       "false_change_percent": 0.0,
-      "combined_score_percent": 75.12,
+      "combined_score_percent": 75.25,
       "what_the_app_said": {
         "increasing": {
-          "increasing": 205,
+          "increasing": 206,
           "decreasing": 0,
-          "stable": 195,
+          "stable": 194,
           "insufficient": 0
         },
         "decreasing": {
           "increasing": 0,
-          "decreasing": 197,
-          "stable": 203,
+          "decreasing": 198,
+          "stable": 202,
           "insufficient": 0
         },
         "stable": {
@@ -434,14 +434,14 @@
       "prev_scores_taken": 10,
       "change_threshold": 2.5,
       "used_by_app": false,
-      "changes_caught_percent": 14.0,
+      "changes_caught_percent": 14.12,
       "false_change_percent": 0.0,
-      "combined_score_percent": 57.0,
+      "combined_score_percent": 57.06,
       "what_the_app_said": {
         "increasing": {
-          "increasing": 53,
+          "increasing": 54,
           "decreasing": 0,
-          "stable": 347,
+          "stable": 346,
           "insufficient": 0
         },
         "decreasing": {

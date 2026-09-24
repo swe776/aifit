@@ -43,7 +43,7 @@ def compare_with_personal_baseline(
         )
 
     # The difference is the current score minus the baseline score
-    difference_from_baseline = current_score - baseline
+    difference_from_baseline = round(current_score - baseline, 2)
 
     # Risk is increasing when the score is 1.5 or more above the baseline and decreasing when it is 1.5 or more below
     if difference_from_baseline >= RISK_CHANGE_THRESHOLD:
@@ -55,6 +55,6 @@ def compare_with_personal_baseline(
 
     return PersonalBaselineResult(
         baseline=round(baseline, 2),
-        difference_from_baseline=round(difference_from_baseline, 2),
+        difference_from_baseline=difference_from_baseline,
         risk_change_direction=risk_change_direction,
     )

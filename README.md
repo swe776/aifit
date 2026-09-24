@@ -376,7 +376,7 @@ entry alone was correct in 26 of 36 cases (72.22%), both together in 24
 kappa of 0.861.
 
 **Objective 3** was met. The baseline with ten previous scores and a 1.5
-threshold reached a 94.56% combined score which is above the 85% target, and
+threshold reached a 94.62% combined score which is above the 85% target, and
 the recommendation rules gave the expected output in all 60 risk change cases
 and every other check.
 
