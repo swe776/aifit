@@ -34,6 +34,14 @@ function formatLabel(label) {
 }
 
 
+// Keep the difference at one decimal place without rounding up 1.48 to 1.5
+function formatDifference(value) {
+  const truncated = Math.trunc(value * 10) / 10;
+
+  return `${truncated > 0 ? "+" : ""}${truncated.toFixed(1)}`;
+}
+
+
 // The heading for each risk change
 const RISK_CHANGE_HEADINGS = {
   increasing: "Increasing",
@@ -221,10 +229,7 @@ export default function DashboardScreen({
                 <div>
                   <dt>Difference</dt>
                   <dd>
-                    {stats.difference_from_baseline > 0
-                      ? "+"
-                      : ""}
-                    {stats.difference_from_baseline.toFixed(1)}
+                   {formatDifference(stats.difference_from_baseline)}
                   </dd>
                 </div>
               </dl>
