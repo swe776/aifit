@@ -127,8 +127,7 @@ and on Linux with `sudo apt install ffmpeg`.
 
 - about 6 GB of free disk space for models downloaded and .venv
 
-**1. Set up.** From the project folder, open visual studio, a new terminal and
-use cmd and type
+**1. Set up.** Click code and download the repository as a ZIP from GitHub. Then, extract it. Next, open visual studio, a new terminal and use cmd. The extracted ZIP might create another `aifit-main` folder inside the first one so you might need to use type `cd aifit-main` before following the below steps. 
 
 ```bash
 python -m venv .venv
@@ -138,8 +137,7 @@ pip install -r requirements.txt
 
 On macOS or Linux there is no cmd so use the normal Terminal.
 Type `python3 -m venv .venv` instead of `python -m venv .venv` for the first command
-and activate with `source .venv/bin/activate` instead. Once the environment is
-active `python` works on its own so every later command in this README is the same.
+and activate with `source .venv/bin/activate` instead of `.venv\Scripts\activate` for the second command. Once the environment is active `python` works on its own so every later command used in this README is the same.
 
 
 `requirements.txt` lists every package with the exact versions the
