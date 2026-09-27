@@ -127,7 +127,7 @@ and on Linux with `sudo apt install ffmpeg`.
 
 - about 6 GB of free disk space for models downloaded and .venv
 
-**1. Set up.** Click code and download the repository as a ZIP from GitHub. Then, extract it. Next, open visual studio, a new terminal and use cmd. The extracted ZIP might create another `aifit-main` folder inside the first one so you might need to use type `cd aifit-main` before following the below steps. 
+**1. Set up.** Click code and download the repository as a ZIP from GitHub. Then, extract it. Next, open visual studio, a new terminal and use cmd. The extracted ZIP might create another `aifit-main` folder inside the first one so you might need to type `cd aifit-main` before following the below steps. 
 
 ```bash
 python -m venv .venv
