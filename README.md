@@ -158,7 +158,7 @@ python -c "import secrets; print(secrets.token_urlsafe(48))"
 
 **3. Start the backend.** use cmd
 
-If the terminal opens in the outer `aifit-main` folder, first run`cd aifit-main`, then
+If the terminal opens in the outer `aifit-main` folder, first run `cd aifit-main`, then
 
 ```bash
 uvicorn backend.app.main:app --reload
