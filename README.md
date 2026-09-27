@@ -181,7 +181,7 @@ runs on a CPU.
 
 ## Running the tests
 
-Use cmd on a third terminal. If the terminal opens in the outer `aifit-main` folder, first run`cd aifit-main`, then 
+Use cmd on a third terminal. If the terminal opens in the outer `aifit-main` folder, first run `cd aifit-main`, then 
 
 ```bash
 python -B -m pytest backend/tests -q
