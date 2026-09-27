@@ -44,7 +44,7 @@ each food offers and the meal is placed in a band. A food group reading has a
 band set for each of the twelve groups because it names a category and not
 the food itself.
 
-A dish or caption reading (SigLIP2, BLIP Large):
+A dish or caption reading (SigLIP2, BLIP Large)
 
 - **Balanced** when it has at least three positive groups (protein, fibre,
   produce, wholegrain) and no poor ones
@@ -52,7 +52,7 @@ A dish or caption reading (SigLIP2, BLIP Large):
   sugar) or one poor group and no positive ones
 - **Mixed** for everything else
 
-Food group reading (Kaludi):
+Food group reading (Kaludi)
 
 - **Balanced** never because a category only brings one positive group
 - **Poor** for dessert and fried food
@@ -146,7 +146,9 @@ application and the evaluations were run with.
 
 **2. Add a secret key.** Create a file and name it `.env` and copy
 `.env.example` to `.env` and set `SECRET_KEY` to a long and random value.
-This signs the login tokens. You can make one by
+This signs the login tokens. You can make one by typing the below command 
+in a cmd terminal. If you have two aifit-main folders, make sure .env file is 
+in the aifit-main folder that has requirements.txt, backend and frontend.
 
 ```bash
 python -c "import secrets; print(secrets.token_urlsafe(48))"
@@ -156,11 +158,15 @@ python -c "import secrets; print(secrets.token_urlsafe(48))"
 
 **3. Start the backend.** use cmd
 
+If the terminal opens in the outer `aifit-main` folder, first run`cd aifit-main`, then
+
 ```bash
 uvicorn backend.app.main:app --reload
 ```
 
 **4. Start the frontend** use cmd in a second terminal
+
+If the terminal opens in the outer `aifit-main` folder, first run `cd aifit-main`, then
 
 ```bash
 cd frontend
@@ -175,7 +181,7 @@ runs on a CPU.
 
 ## Running the tests
 
-use cmd on terminal
+Use cmd on a third terminal. If the terminal opens in the outer `aifit-main` folder, first run`cd aifit-main`, then 
 
 ```bash
 python -B -m pytest backend/tests -q
@@ -188,9 +194,10 @@ models are replaced with test replacements so the tests can run quick.
 
 There is also a system check with 51 tests that runs check-ins through the
 real models from upload (start) to advice (end). It is not part of pytest
-because it takes a few minutes to run
+because it takes a few minutes to run.
 
-use cmd on terminal
+After the 291 unit and integration tests run, on the same terminal you can type
+the below command to run the system tests.
 
 ```bash
 python -B backend/tests/system/real_model_system_check.py
@@ -204,7 +211,7 @@ backend/
     main.py                     starts the FastAPI app
     config.py                   settings and the model names
     auth.py                     password hashing (Argon2) and login tokens (JWT)
-    database.py, db_models.py   SQLite through SQLAlchemy: accounts and check-ins
+    database.py, db_models.py   SQLite through SQLAlchemy; accounts and check-ins
     schemas.py                  what the API accepts and returns
     models/
       speech_to_text.py         the speech-to-text model (Whisper)
@@ -220,14 +227,14 @@ backend/
       account_routes.py         register, log in, privacy notice
       checkin_routes.py         transcribe, read a meal, score, history, corrections
   tests/
-    unit/                       the rules: scoring, B3/P2, baseline, advice, transcript and uploads
+    unit/                       the rules; scoring, B3/P2, baseline, advice, transcript and uploads
     integration/                the routes, accounts and database
     system/                     real_model_system_check.py, whole check-ins with the real models
 frontend/
   src/
     App.jsx, main.jsx           the main app and switching between screens
     api.js, auth.jsx            to the backend and the logged-in user
-    features/                   one file per screen or part of a screen: CheckInScreen,
+    features/                   one file per screen or part of a screen; CheckInScreen,
                                 VoiceEntryInput, MealPhotoInput, CheckInResultScreen,
                                 DropoutRiskEstimate, RecommendationCard, DashboardScreen,
                                 RiskTrendChart, PrivacyNoticeScreen, AccountScreen
@@ -266,7 +273,7 @@ script.
 
 Objective 1 is answered by 1) to 4), Objective 2 by 10), Objective 3 by 9) and 11) and Objective 4 by 12).
 
-Run any of them from the project folder using cmd:
+Run any of them from the project folder using cmd. If the terminal opens in the outer `aifit-main` folder, first run `cd aifit-main`, then 
 
 ```bash
 python evaluation/model/evaluate_speech_models.py
@@ -289,7 +296,7 @@ has to exist before they can run. If you have not made it yet, please copy
 
 The three model comparisons 1), 2) and 3) take a long time on a CPU so they
 can also rebuild their results from the predictions saved in the last full run
-without having to load any models:
+without having to load any models
 
 ```bash
 python evaluation/model/evaluate_speech_models.py --from-saved-predictions
@@ -314,14 +321,14 @@ Evaluation measures used;
   sentences were given exactly the right label.
 - **Macro F1** works out F1 for balanced, mixed and poor separately and
   averages them so the most common band does not skew the result.
-- **Combined score** for the baseline is the average of two rates: how many
+- **Combined score** for the baseline is the average of two rates; how many
   increasing or decreasing histories were caught and how many stable
   histories were correctly left as stable.
 - **Fleiss' kappa** measures how much the three raters agreed
   (Fleiss, 1971). Each case's reference label takes the majority vote and if
   there is a tie, the more serious label is kept.
 
-The shared helpers are in `evaluation/shared/`: `paths.py` finds the project
+The shared helpers are in `evaluation/shared/`; `paths.py` finds the project
 folders, `food_text.py` turns food names into the 12 shared food groups for
 the food recognition test 3), `snapme_sampling.py` reads the 184 photographs file names and checks if those images are present and `hpb_reference_band.py` gives a meal its reference band from the
 Health Promotion Board guidance.
@@ -343,7 +350,7 @@ Everything the evaluations use is in `evaluation/data/`
 | `risk_grid.csv` | The 15 row reference risk grid | 11), figures |
 | `system_test_images/` | A drink and a pair of shoes to check not food photographs are refused | System check |
 
-The usability study is in `evaluation/user_testing/`: the consent form,
+The usability study is in `evaluation/user_testing/`; the consent form,
 the Google Form and the anonymised responses in `sus_responses.csv` which 12)
 reads.
 
